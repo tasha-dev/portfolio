@@ -1,0 +1,3 @@
+# Telling To Robots That They Have Access All Over Our Website
+User-agent: *
+Disallow:

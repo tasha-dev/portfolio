@@ -1,0 +1,48 @@
+/*Codes By Mahdi Tasha*/
+/*Importing TailwindCSS*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Custom Styles*/
+.click-btn-popup::after {background-image: url('../public/img/device/img-rounded-traiangle.svg');}
+.primary-btn {@apply bg-sky-500 text-sky-100 w-full p-[10px] text-center text-[15px] font-bold tracking-wide uppercase shadow-sky-900 shadow-[0_0.5em_0] rounded-[5px] -translate-y-[10px] transition-all duration-300 hover:translate-y-0 active:translate-y-0 hover:shadow-transparent active:shadow-sky-900 active:shadow-[0_inset_-0.5em_0]}
+.input {@apply bg-theme block w-full px-[20px] py-[15px] rounded-[10px] text-white text-[14px]  placeholder:text-white/60 font-normal outline-0;}
+.hiring-animation {animation: hiring-animation 3s infinite linear alternate-reverse;}
+.sideprojects-screw {@apply text-white/20 transition-all duration-500 data-[opened="true"]:translate-x-[10px] data-[opened="true"]:translate-y-[10px] data-[opened="true"]:rotate-90 data-[opened="true"]:opacity-0 data-[opened="true"]:pointer-events-none;}
+
+.small-lines-on-door {
+    background: linear-gradient(45deg, #440083FF 7.5%, #240046 7.5%, #240046 42.5%, #440083FF 42.5%, #440083FF 57.5%, #240046 57.5%, #240046 92.5%, #440083FF 92.5%);
+    background-size: 1em 1em;
+}
+
+.holder-bg {
+    background-image: radial-gradient(circle, #240046 20%, transparent 10%), radial-gradient(circle, rgba(229,229,229,0.03) 20%, transparent 10%);
+    background-position: 50% 50%;
+    background-size: 1em 1em;
+}
+
+.noise-img {
+    @apply z-[40] absolute top-0 left-0 w-full h-full pointer-events-none mix-blend-overlay;
+    background: url('../public/img/texture/img-noise.png');
+    animation: 0.2s infinite noise;
+}
+
+/*Animations*/
+@keyframes noise {
+    0%, 100% {background-position: 0 0;}
+    10% {background-position: -35% -40%;}
+    20% {background-position: -45% 35%;}
+    30% {background-position: 37% -55%;}
+    40% {background-position: 50% 55%;}
+    50% {background-position: -55% 40%;}
+    60% {background-position: 45% 35%;}
+    70% {background-position: -30% 45%;}
+    80% {background-position: 45% 55%;}
+    90% {background-position: -40% 40%;}
+}
+
+@keyframes hiring-animation {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+}

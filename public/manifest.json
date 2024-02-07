@@ -1,0 +1,27 @@
+{
+  "name": "Mahdi Tasha | Creative Frontend Developer",
+  "short_name": "Mahdi Tasha's Portfolio",
+  "orientation": "portrait",
+  "description": "I'm Frontend based in tehran.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#240046",
+  "background_color": "#0f0028",
+  "icons": [
+    {
+      "src": "./img/manifest/img-logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/manifest/img-logo-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/manifest/img-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
