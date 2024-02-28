@@ -4,6 +4,7 @@ import {ReactNode} from "react";
 import {Roboto} from "next/font/google";
 import {twMerge} from 'tailwind-merge'
 import {Metadata} from "next";
+import '@/app/index.css';
 
 // Defining metadata
 export const metadata: Metadata = {
@@ -55,8 +56,8 @@ interface propsType {
 export default function RootLayout({children}: propsType): ReactNode {
     // Returning JSX
     return (
-        <html>
-            <body className={twMerge('overflow-x-hidden', RobotFont.className)}>
+        <html className={'dark'}>
+            <body className={twMerge('dark:bg-dark light:bg-light overflow-x-hidden', RobotFont.className)}>
                 {children}
             </body>
         </html>
