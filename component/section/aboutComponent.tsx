@@ -6,6 +6,7 @@ import MahdiImage from '@/public/img/img-mahdi-tasha.jpg';
 import TitleComponent from "@/chunk/titleComponent";
 import Link from "next/link";
 import ParagraphComponent from "@/chunk/paragraphComponent";
+import { differenceInYears } from 'date-fns';
 
 // Creating and exporting about component as defualt
 export default function AboutComponent():ReactNode {
@@ -24,7 +25,12 @@ export default function AboutComponent():ReactNode {
             </header>
             <main>
                 <TitleComponent tier={2}>About</TitleComponent>
-                <ParagraphComponent noMargin>Hey there! 👋 I'm Mahdi, a passionate front-end developer from Tehran, rocking the coding scene since 2020. 🚀 Armed with a problem-solving superpower and an eye for design, I've earned my stripes as a top-notch developer. 🌐 Always hungry for knowledge and team collaborations🌟Fueled by my passion for coding, I channel my skills towards creating a better world through innovative solutions that transcend digital boundaries and positively impact lives. 🌍💻</ParagraphComponent>
+                <ParagraphComponent noMargin>
+                    Hey there! 👋 I'm Mahdi, a passionate front-end developer from Tehran, rocking the coding scene since 2020 ({differenceInYears(new Date(), new Date('2020-03-21'))} Years). <br/>
+                    🚀 Armed with a problem-solving superpower and an eye for design, I've earned my stripes as a top-notch developer. <br/>
+                    🌐 Always hungry for knowledge and team collaborations🌟 <br/>
+                    Fueled by my passion for coding, I channel my skills towards creating a better world through innovative solutions that transcend digital boundaries and positively impact lives. 🌍💻
+                </ParagraphComponent>
             </main>
         </section>
     );
