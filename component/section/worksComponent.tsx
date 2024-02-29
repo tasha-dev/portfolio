@@ -16,6 +16,7 @@ export default function WorksComponent():ReactNode {
                         <WorkItemComponent
                             startDate={'November 2023'}
                             endDate={'January 2024'}
+                            link={'https://webimode-tau.vercel.app/'}
                             name={'Webmiode'}
                             tech={['NextJS', 'tailwindCSS', 'typescript', 'ReactJS']}
                         >
