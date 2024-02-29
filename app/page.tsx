@@ -6,6 +6,7 @@ import AboutComponent from "@/component/section/aboutComponent";
 import PersonalInfoComponent from "@/component/section/personalInfoComponent";
 import SkillsComponent from "@/component/section/skillsComponent";
 import WorksComponent from "@/component/section/worksComponent";
+import LinksComponent from "@/component/section/linksComponent";
 
 // Creating and exporting home page as default
 export default function HomePage():ReactNode {
@@ -16,6 +17,7 @@ export default function HomePage():ReactNode {
             <PersonalInfoComponent />
             <SkillsComponent />
             <WorksComponent />
+            <LinksComponent />
         </PageComponent>
     );
 }
