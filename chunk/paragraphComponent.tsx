@@ -15,7 +15,7 @@ export default function ParagraphComponent({noMargin = false, children, classNam
     // Returning JSX
     return (
         <p className={twMerge(
-            'dark:text-light200 text-dark200 lg:text-[15px] text-[12px]',
+            'dark:text-light200 text-dark200 lg:text-[15px] text-[12px] font-normal',
             (noMargin) ? undefined : 'lg:mb-[12px] mb-[10px]',
             className
         )}>

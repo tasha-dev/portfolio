@@ -12,7 +12,7 @@ export default function AboutComponent():ReactNode {
     // Returning JSX
     return (
         <section>
-            <header className={'flex gap-[20px] flex-wrap items-center justify-start mb-[50px]'}>
+            <header className={'flex gap-[20px] flex-wrap items-center justify-start lg:mb-[50px] mb-[20px]'}>
                 <Image alt={'Image of mahdi tasha'} src={MahdiImage.src} width={100} height={100} className={'rounded-full aspect-square'} />
                 <div>
                     <TitleComponent noMargin tier={1}>Mahdi Tasha</TitleComponent>

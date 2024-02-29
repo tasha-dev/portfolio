@@ -15,7 +15,7 @@ export default function PageComponent({children}:propsType):ReactNode {
     return (
         <div>
             <HeaderComponent />
-            <ContainerComponent type={'small'} className={'lg:mt-[130px] mt-[100px]'}>
+            <ContainerComponent type={'small'} className={'lg:mt-[130px] mt-[100px] flex flex-col lg:gap-[20px] gap-[10px]'}>
                 {children}
             </ContainerComponent>
         </div>
