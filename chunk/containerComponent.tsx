@@ -17,7 +17,7 @@ export default function ContainerComponent({className, children, type = 'small'}
         <div className={
             twMerge(
                 'mx-auto p-[20px]',
-                (type === 'large') ? 'max-w-[1100px]' : 'max-w-[700px]',
+                (type === 'large') ? 'max-w-[1100px]' : 'max-w-[600px]',
                 className
             )
         }>

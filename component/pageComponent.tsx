@@ -2,6 +2,7 @@
 // Importing part
 import {ReactNode} from "react";
 import HeaderComponent from "@/component/headerComponent";
+import ContainerComponent from "@/chunk/containerComponent";
 
 // Defining type of prop[s
 interface propsType {
@@ -14,7 +15,9 @@ export default function PageComponent({children}:propsType):ReactNode {
     return (
         <div>
             <HeaderComponent />
-            {children}
+            <ContainerComponent type={'small'} className={'lg:mt-[130px] mt-[100px]'}>
+                {children}
+            </ContainerComponent>
         </div>
     );
 }
