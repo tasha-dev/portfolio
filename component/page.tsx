@@ -4,19 +4,12 @@
 
 // Importing part
 import {ReactNode} from "react";
-import {cn} from "@/lib/cn";
 import {motion} from 'framer-motion';
-import {cubicBezier} from "framer-motion";
-
-// Defining type of props
-interface propsType {
-    size?: 'lg' | 'sm';
-    children: ReactNode;
-    className?: string;
-}
+import Container from "@/component/ui/container";
+import {pageType} from "@/types/uiComponent";
 
 // Creating and exporting page component as default
-export default function page({children, className, size = 'lg'}:propsType):ReactNode {
+export default function Page({children, className}:pageType):ReactNode {
     // Returning JSX
     return (
         <motion.div
@@ -24,15 +17,13 @@ export default function page({children, className, size = 'lg'}:propsType):React
                 'showing' : {y: 0, opacity: 100},
                 'hidden' : {y: 50, opacity: 0}
             }}
-            className={cn(
-                'mx-auto p-[20px]',
-                (size === 'lg') ? 'max-w-[1200px]' : 'max-w-[600px]',
-                className
-            )}
             initial={'hidden'}
             animate={'showing'}
+            className={className}
         >
-            {children}
+            <Container size={'sm'} className={'lg:mt-[100px] mt-0'}>
+                {children}
+            </Container>
         </motion.div>
     );
 }

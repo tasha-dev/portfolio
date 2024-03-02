@@ -5,6 +5,7 @@ import {cn} from '@/lib/cn';
 import {Montserrat} from "next/font/google";
 import siteConfig from "@/config/siteConfig";
 import '@/styles/index.css';
+import Header from "@/component/header";
 
 // Defining fonts
 const montserratFont = Montserrat({
@@ -46,6 +47,7 @@ export default function RootLayout({children}:propsType):ReactNode {
     return (
         <html>
             <body className={cn('overflow-x-hidden min-h-screen font-sans dark:bg-black bg-white', montserratFont.variable)}>
+                <Header />
                 {children}
             </body>
         </html>
