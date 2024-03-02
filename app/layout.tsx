@@ -4,11 +4,13 @@ import {ReactNode} from "react";
 import {cn} from '@/lib/cn';
 import {Montserrat} from "next/font/google";
 import siteConfig from "@/config/siteConfig";
+import '@/styles/index.css';
 
 // Defining fonts
 const montserratFont = Montserrat({
     weight: ['700', '500', '300'],
-    variable: "--font-sans"
+    variable: "--font-sans",
+    subsets: ['latin']
 })
 
 // Defining metadata
