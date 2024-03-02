@@ -45,7 +45,7 @@ export default function RootLayout({children}:propsType):ReactNode {
     // Returning JSX
     return (
         <html>
-            <body className={cn('overflow-x-hidden min-h-screen font-sans', montserratFont.variable)}>
+            <body className={cn('overflow-x-hidden min-h-screen font-sans dark:bg-black bg-white', montserratFont.variable)}>
                 {children}
             </body>
         </html>
