@@ -1,5 +1,8 @@
+// Codes by mahdi tasha
+// Importing part
 import type { Config } from "tailwindcss"
 
+// Defining configs of tailwind;
 const config = {
   darkMode: ["class"],
   content: [
@@ -37,4 +40,5 @@ const config = {
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
 
-export default config
+// Exporting the configs
+export default config;
