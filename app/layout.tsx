@@ -18,7 +18,7 @@ const montserratFont = Montserrat({
 // Defining metadata
 export const metadata = {
     title: {
-        default: 'Home',
+        default: 'Home | Mahdi Tasha',
         template: `%s | Mahdi Tasha`,
     },
     description: siteConfig.description,
