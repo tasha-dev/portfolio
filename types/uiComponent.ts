@@ -51,3 +51,8 @@ export interface workType {
         start: string;
     };
 }
+
+export interface arrowLinkType {
+    title: string;
+    link: string;
+}
