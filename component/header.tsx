@@ -8,8 +8,6 @@ import Container from "@/component/ui/container";
 import {motion} from 'framer-motion';
 import Image from "next/image";
 import Logo from '@/images/logo.jpg';
-import {Button} from "@/component/ui/button";
-import {Moon} from 'lucide-react';
 import Link from "next/link";
 import ThemeToggle from "@/component/themeToggle";
 
@@ -25,7 +23,7 @@ export default function Header():ReactNode {
             initial={'hidden'}
             animate={'showing'}
             transition={{delay: 1}}
-            className={'dark:bg-white/20 bg-black/20 backdrop-blur lg:fixed lg:top-0 lg:left-0 w-full'}
+            className={'dark:bg-white/20 bg-black/20 backdrop-blur lg:fixed lg:top-0 lg:left-0 w-full z-10'}
         >
             <Container size={'lg'} className={'flex justify-between items-center'}>
                 <Link href={'/'}>

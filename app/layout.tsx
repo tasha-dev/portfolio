@@ -45,7 +45,7 @@ interface propsType {
 export default function RootLayout({children}:propsType):ReactNode {
     // Returning JSX
     return (
-        <html suppressHydrationWarning>
+        <html suppressHydrationWarning className={"dark"}>
             <body className={cn('overflow-x-hidden min-h-screen font-sans dark:bg-black bg-white', montserratFont.variable)}>
                 <Header />
                 {children}
