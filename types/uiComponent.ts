@@ -24,13 +24,30 @@ export interface profileType {
     name: string;
     role: string;
     link: linkType[];
+    className?: string;
 }
 
 export interface titleType {
     children: ReactNode;
+    className?: string;
     tier: 1 | 2 | 3 | 4;
 }
 
-export interface paragraph {
+export interface paragraphType {
     children: ReactNode;
+}
+
+export interface listType {
+    children: ReactNode;
+}
+
+export interface workType {
+    name: string;
+    link: string;
+    children: ReactNode;
+    stack: string[];
+    date: {
+        end: string;
+        start: string;
+    };
 }

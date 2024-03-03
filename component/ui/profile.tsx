@@ -6,12 +6,16 @@ import {Avatar, AvatarFallback, AvatarImage} from "@/component/ui/avatar";
 import getNameStand from "@/util/getNameStand";
 import Title from "@/component/ui/title";
 import Link from "next/link";
+import {cn} from "@/lib/cn";
 
 // Creating and exporting profile component as default
-export default function Profile({img, name, role, link}:profileType):ReactNode {
+export default function Profile({img, name, role, link, className}:profileType):ReactNode {
     // Returning JSX
     return (
-        <div className={'flex items-center justify-start gap-[20px] flex-wrap'}>
+        <div className={cn(
+            'flex items-center justify-start gap-[20px] flex-wrap',
+            className
+        )}>
             <Avatar>
                 <AvatarImage src={img} width={200} height={200}/>
                 <AvatarFallback>{getNameStand(name)}</AvatarFallback>
