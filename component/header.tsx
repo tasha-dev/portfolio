@@ -11,6 +11,7 @@ import Logo from '@/images/logo.jpg';
 import {Button} from "@/component/ui/button";
 import {Moon} from 'lucide-react';
 import Link from "next/link";
+import ThemeToggle from "@/component/themeToggle";
 
 // Creating and exporting header component as default
 export default function Header():ReactNode {
@@ -30,9 +31,7 @@ export default function Header():ReactNode {
                 <Link href={'/'}>
                     <Image width={40} height={40} alt={'@tasha-dev'} src={Logo.src} className={'aspect-square rounded-[10px]'} />
                 </Link>
-                <Button size={'icon'}>
-                    <Moon color={'white'} size={20} />
-                </Button>
+                <ThemeToggle />
             </Container>
         </motion.header>
     );
