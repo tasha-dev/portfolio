@@ -29,9 +29,9 @@ export default function HomePage():ReactNode {
                         <Title tier={2}>About</Title>
                     </header>
                     <main>
-                        <Paragraph>Hey there! 👋 I'm Mahdi, a passionate front-end developer from Tehran, rocking the
+                        <Paragraph>Hey there! 👋 Im Mahdi, a passionate front-end developer from Tehran, rocking the
                             coding scene since 2021 ({differenceInYears(new Date(), new Date('1/1/2021'))} Years).</Paragraph>
-                        <Paragraph>🚀 Armed with a problem-solving superpower and an eye for design, I've earned my
+                        <Paragraph>🚀 Armed with a problem-solving superpower and an eye for design, I have earned my
                             stripes as a top-notch developer.</Paragraph>
                         <Paragraph>🌐 Always hungry for knowledge and team collaborations🌟</Paragraph>
                         <Paragraph>Fueled by my passion for coding, I channel my skills towards creating a better world
@@ -77,7 +77,7 @@ export default function HomePage():ReactNode {
                             date={{end: 'June 2023', start: 'August 2023'}}
                             stack={['NextJS', 'tailwindCSS', 'typescript', 'ReactJS']}
                         >
-                            As the front-end developer for the "Hoopi" e-commerce project, I took the lead in sculpting web pages that seamlessly translated the vision of the employer into a flawless online shopping experience. Leveraging my expertise in front-end technologies, I ensured that each element of the web pages not only met but exceeded the employer's expectations. From responsive design to intuitive user interfaces, every detail was meticulously crafted to enhance the overall user journey. The culmination of my efforts resulted in a perfectly executed web presence for "Hoopi," aligning with the specific needs of the employer and elevating the e-commerce platform to new heights of excellence.
+                            As the front-end developer for the Hoopi e-commerce project, I took the lead in sculpting web pages that seamlessly translated the vision of the employer into a flawless online shopping experience. Leveraging my expertise in front-end technologies, I ensured that each element of the web pages not only met but exceeded the employers expectations. From responsive design to intuitive user interfaces, every detail was meticulously crafted to enhance the overall user journey. The culmination of my efforts resulted in a perfectly executed web presence for Hoopi aligning with the specific needs of the employer and elevating the e-commerce platform to new heights of excellence.
                         </Work>
                         <Work
                             name={'WebiMode'}
@@ -85,13 +85,13 @@ export default function HomePage():ReactNode {
                             date={{end: 'November 2023', start: 'January 2024'}}
                             stack={['NextJS', 'tailwindCSS', 'typescript', 'ReactJS']}
                         >
-                            In my role as the front-end developer for the "WebiMode" project, I took pride in
+                            In my role as the front-end developer for the WebiMode project, I took pride in
                             meticulously crafting web pages that precisely met the needs and expectations of the
                             international agency. Employing my expertise in front-end technologies, I ensured a seamless
                             fusion of design and functionality, creating a user-centric experience that resonated with
-                            the employer's vision. The successful completion of the project stands as a testament to my
+                            the employers vision. The successful completion of the project stands as a testament to my
                             dedication to perfection and my ability to translate concepts into a visually appealing and
-                            functionally sound digital reality for "WebiMode."
+                            functionally sound digital reality for WebiMode.
                         </Work>
                         <Work
                             name={'WatchLog'}
@@ -99,7 +99,7 @@ export default function HomePage():ReactNode {
                             date={{end: 'February 2024', start: 'February 2024'}}
                             stack={['NextJS', 'tailwindCSS', 'typescript', 'ReactJS']}
                         >
-                            Undertaking the development of "WatchLog" was a fulfilling side project that not only added to my skill set as a front-end developer but also stemmed from a personal request from a friend. This app, tailored to create curated lists of movies and serials, allowed users to track and rate their watched content. The completion of the web pages was a blend of functionality and user-friendly design, ensuring an intuitive experience for both myself and potential users. Crafting this app not only provided me with valuable hands-on experience but also reinforced the significance of technology meeting personal needs. "WatchLog" emerged not just as a testament to my technical proficiency but as a collaborative effort with a friend, underscoring the power of technology in fulfilling individualized requirements.
+                            Undertaking the development of WatchLog was a fulfilling side project that not only added to my skill set as a front-end developer but also stemmed from a personal request from a friend. This app, tailored to create curated lists of movies and serials, allowed users to track and rate their watched content. The completion of the web pages was a blend of functionality and user-friendly design, ensuring an intuitive experience for both myself and potential users. Crafting this app not only provided me with valuable hands-on experience but also reinforced the significance of technology meeting personal needs. WatchLog emerged not just as a testament to my technical proficiency but as a collaborative effort with a friend, underscoring the power of technology in fulfilling individualized requirements.
                         </Work>
                         <Work
                             name={'WebiMode'}
@@ -107,7 +107,7 @@ export default function HomePage():ReactNode {
                             date={{end: 'January 2024', start: 'February 2024'}}
                             stack={['NextJS', 'tailwindCSS', 'typescript', 'ReactJS']}
                         >
-                            Embarking on a side project close to my heart, I dedicated my skills as a front-end developer to bring to life "I Will Be Good" – a unique fusion of medication and meditation reporting. Crafting complete web pages for this project was not just a professional endeavor but a personal journey aimed at fostering comfort and gaining invaluable experience. Navigating the intricate balance between medication and meditation, I meticulously designed the web interface to be intuitive, providing a seamless user experience. This project, which also served as a much-needed app for my own well-being, allowed me to not only enhance my technical capabilities but also underscored the importance of merging technology with personal growth and self-care. The completed web pages stand as a testament to my commitment to continuous learning and the harmonious integration of technology into our daily lives.
+                            Embarking on a side project close to my heart, I dedicated my skills as a front-end developer to bring to life I Will Be Good – a unique fusion of medication and meditation reporting. Crafting complete web pages for this project was not just a professional endeavor but a personal journey aimed at fostering comfort and gaining invaluable experience. Navigating the intricate balance between medication and meditation, I meticulously designed the web interface to be intuitive, providing a seamless user experience. This project, which also served as a much-needed app for my own well-being, allowed me to not only enhance my technical capabilities but also underscored the importance of merging technology with personal growth and self-care. The completed web pages stand as a testament to my commitment to continuous learning and the harmonious integration of technology into our daily lives.
                         </Work>
                     </main>
                 </section>
