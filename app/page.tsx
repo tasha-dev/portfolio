@@ -8,13 +8,14 @@ import Title from "@/component/ui/title";
 import Paragraph from "@/component/ui/paragraph";
 import List from "@/component/ui/list";
 import Work from "@/component/work";
+import {differenceInYears} from 'date-fns';
 
 // Creating and exporting home page as default
 export default function HomePage():ReactNode {
     // Returning JSX
     return (
         <Page>
-            <div className={'flex gap-[50px] flex-col'}>
+            <div className={'flex lg:gap-[50px] gap-[30px] flex-col'}>
                 <Profile
                     img={profileImage.src}
                     name={'Mahdi Tasha'}
@@ -29,7 +30,7 @@ export default function HomePage():ReactNode {
                     </header>
                     <main>
                         <Paragraph>Hey there! 👋 I'm Mahdi, a passionate front-end developer from Tehran, rocking the
-                            coding scene since 2020 (3 Years).</Paragraph>
+                            coding scene since 2021 ({differenceInYears(new Date(), new Date('1/1/2021'))} Years).</Paragraph>
                         <Paragraph>🚀 Armed with a problem-solving superpower and an eye for design, I've earned my
                             stripes as a top-notch developer.</Paragraph>
                         <Paragraph>🌐 Always hungry for knowledge and team collaborations🌟</Paragraph>
@@ -45,7 +46,7 @@ export default function HomePage():ReactNode {
                     <List>
                         <li><b>Name</b> : Mahdi Tasha</li>
                         <li><b>Location</b> : Tehran, iran</li>
-                        <li><b>Age</b> : 17 years old</li>
+                        <li><b>Age</b> : {differenceInYears(new Date(), '09/18/2006')} years old</li>
                         <li><b>Education</b> : Computer Engineering at Azad University of South Tehran</li>
                     </List>
                 </section>
