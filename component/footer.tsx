@@ -18,7 +18,6 @@ export default function Footer():ReactNode {
                 <main>
                     <List>
                         <ArrowLink title={'Github'} link={'https://github.com/tasha-dev'} />
-                        <ArrowLink title={'Instagram'} link={'https://www.instagram.com/mahditasha_/'} />
                         <ArrowLink title={'Linkedin'} link={'https://www.linkedin.com/in/mahditasha/'} />
                         <ArrowLink title={'Email'} link={'mailto:imwhdiiii@gmail.com'} />
                     </List>
