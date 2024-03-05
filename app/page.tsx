@@ -102,7 +102,7 @@ export default function HomePage():ReactNode {
                             Undertaking the development of WatchLog was a fulfilling side project that not only added to my skill set as a front-end developer but also stemmed from a personal request from a friend. This app, tailored to create curated lists of movies and serials, allowed users to track and rate their watched content. The completion of the web pages was a blend of functionality and user-friendly design, ensuring an intuitive experience for both myself and potential users. Crafting this app not only provided me with valuable hands-on experience but also reinforced the significance of technology meeting personal needs. WatchLog emerged not just as a testament to my technical proficiency but as a collaborative effort with a friend, underscoring the power of technology in fulfilling individualized requirements.
                         </Work>
                         <Work
-                            name={'WebiMode'}
+                            name={'I Will Be Good'}
                             link={'https://iwillbegood.vercel.app/'}
                             date={{end: 'January 2024', start: 'February 2024'}}
                             stack={['NextJS', 'tailwindCSS', 'typescript', 'ReactJS']}
