@@ -109,6 +109,14 @@ export default function HomePage():ReactNode {
                         >
                             Embarking on a side project close to my heart, I dedicated my skills as a front-end developer to bring to life I Will Be Good – a unique fusion of medication and meditation reporting. Crafting complete web pages for this project was not just a professional endeavor but a personal journey aimed at fostering comfort and gaining invaluable experience. Navigating the intricate balance between medication and meditation, I meticulously designed the web interface to be intuitive, providing a seamless user experience. This project, which also served as a much-needed app for my own well-being, allowed me to not only enhance my technical capabilities but also underscored the importance of merging technology with personal growth and self-care. The completed web pages stand as a testament to my commitment to continuous learning and the harmonious integration of technology into our daily lives.
                         </Work>
+                        <Work
+                          name={"Math tac toe"}
+                          link={"https://www.math-tac-toe.vercel.app"}
+                          date={{end: '', start: ''}}
+                          stack={['NextJS', 'tailwindCSS', 'typescript', 'ReactJS', 'shadcn/ui']}
+                        >
+                            In my latest venture, I took on the exciting challenge of creating a unique game titled Math Tac Toe. Combining the classic allure of Tic Tac Toe with a mathematical twist, this project served as a fantastic opportunity for me to broaden my skill set. Not only did it involve mastering the intricacies of React, tailwindCSS, and Typescript but it also pushed me to explore the realms of Shadcn/UI, adding a layer of complexity to the user interface and overall gaming experience. As I developed Math Tac Toe for a friend, it became a catalyst for my growth as a front-end developer, showcasing my proficiency in various technologies like React, TypeScript, and Tailwind CSS. This project stands as a testament to my dedication to honing my skills and exploring new avenues in the ever-evolving world of web development. It reflects not only my technical prowess but also my commitment to delivering engaging and innovative solutions.
+                        </Work>
                     </main>
                 </section>
             </div>
