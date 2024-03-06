@@ -111,7 +111,7 @@ export default function HomePage():ReactNode {
                         </Work>
                         <Work
                           name={"Math tac toe"}
-                          link={"https://www.math-tac-toe.vercel.app"}
+                          link={"https://math-tac-toe.vercel.app/"}
                           date={{end: '', start: ''}}
                           stack={['NextJS', 'tailwindCSS', 'typescript', 'ReactJS', 'shadcn/ui']}
                         >
