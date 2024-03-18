@@ -10,6 +10,7 @@ import Image from "next/image";
 import Logo from '@/images/logo.jpg';
 import Link from "next/link";
 import ThemeToggle from "@/component/themeToggle";
+import HeaderLink from "@/component/ui/headerLink";
 
 // Creating and exporting header component as default
 export default function Header():ReactNode {
@@ -25,11 +26,14 @@ export default function Header():ReactNode {
             transition={{delay: 1}}
             className={'dark:bg-white/20 bg-black/20 backdrop-blur lg:fixed lg:top-0 lg:left-0 w-full z-10'}
         >
-            <Container size={'lg'} className={'flex justify-between items-center'}>
+            <Container size={'lg'} className={'flex justify-between items-center gap-[20px]'}>
                 <Link href={'/'}>
                     <Image width={40} height={40} alt={'@tasha-dev'} src={Logo.src} className={'aspect-square rounded-[10px]'} />
                 </Link>
-                <ThemeToggle />
+                <div className={'flex justify-between items-center gap-[20px]'}>
+                    <HeaderLink link={'/blog'}>Blog</HeaderLink>
+                    <ThemeToggle />
+                </div>
             </Container>
         </motion.header>
     );

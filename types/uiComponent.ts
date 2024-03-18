@@ -56,3 +56,8 @@ export interface arrowLinkType {
     title: string;
     link: string;
 }
+
+export interface headerLinkType {
+    children: ReactNode;
+    link: string;
+}
