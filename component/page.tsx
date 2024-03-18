@@ -7,6 +7,7 @@ import {ReactNode} from "react";
 import {motion} from 'framer-motion';
 import Container from "@/component/ui/container";
 import {pageType} from "@/types/uiComponent";
+import Footer from "@/component/footer";
 
 // Creating and exporting page component as default
 export default function Page({children, className}:pageType):ReactNode {
@@ -23,6 +24,7 @@ export default function Page({children, className}:pageType):ReactNode {
         >
             <Container size={'sm'} className={'lg:mt-[100px] mt-0'}>
                 {children}
+                <Footer />
             </Container>
         </motion.div>
     );

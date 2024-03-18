@@ -35,6 +35,7 @@ export interface titleType {
 
 export interface paragraphType {
     children: ReactNode;
+    className?: string;
 }
 
 export interface listType {
@@ -60,4 +61,10 @@ export interface arrowLinkType {
 export interface headerLinkType {
     children: ReactNode;
     link: string;
+}
+
+export interface blogType {
+    title: string;
+    date: string;
+    content: string;
 }

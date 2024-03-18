@@ -6,10 +6,11 @@ import type { Config } from "tailwindcss"
 const config = {
   darkMode: ["class"],
   content: [
-    './component/**/*.{ts,tsx}',
+    './component/ui/*.{ts,tsx}',
     './component/*.{ts,tsx}',
     './app/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}'
+    './app/**/*.{ts,tsx}',
+    './app/**/**/*.{ts,tsx}'
   ],
   prefix: "",
   theme: {

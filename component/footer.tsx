@@ -10,19 +10,17 @@ import ArrowLink from "@/component/ui/arrowLink";
 export default function Footer():ReactNode {
     // Returning JSX
     return (
-        <footer>
-            <Container>
-                <header className={'mb-[20px]'}>
-                    <Title tier={2}>Links</Title>
-                </header>
-                <main>
-                    <List>
-                        <ArrowLink title={'Github'} link={'https://github.com/tasha-dev'} />
-                        <ArrowLink title={'Linkedin'} link={'https://www.linkedin.com/in/mahditasha/'} />
-                        <ArrowLink title={'Email'} link={'mailto:imwhdiiii@gmail.com'} />
-                    </List>
-                </main>
-            </Container>
+        <footer className={'mt-[50px]'}>
+            <header className={'mb-[20px]'}>
+                <Title tier={2}>Links</Title>
+            </header>
+            <main>
+                <List>
+                    <ArrowLink title={'Github'} link={'https://github.com/tasha-dev'}/>
+                    <ArrowLink title={'Linkedin'} link={'https://www.linkedin.com/in/mahditasha/'}/>
+                    <ArrowLink title={'Email'} link={'mailto:imwhdiiii@gmail.com'}/>
+                </List>
+            </main>
         </footer>
     );
 }
