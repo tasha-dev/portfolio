@@ -28,7 +28,7 @@ export default function BlogDb():ReactNode {
                                             key={index}
                                             title={item.name}
                                             date={item.date}
-                                            content={item.content}
+                                            content={item.description}
                                         />
                                     ))
                                 }
