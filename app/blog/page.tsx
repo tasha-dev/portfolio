@@ -5,7 +5,7 @@ import Page from "@/component/page";
 import Title from "@/component/ui/title";
 import Paragraph from "@/component/ui/paragraph";
 import Blog from "@/component/blog";
-import {blogType} from "@/types/blog";
+import {blogType} from "@/types/db";
 
 // Defining metadata of page
 export const metadata = {title: 'Blog'}
@@ -30,7 +30,7 @@ export default function BlogPage():ReactNode {
                                 data.slice(0, 4).map((item, index) => (
                                     <Blog
                                         key={index}
-                                        title={item.title}
+                                        title={item.name}
                                         date={item.date}
                                         content={item.content}
                                     />
