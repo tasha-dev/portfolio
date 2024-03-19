@@ -7,15 +7,11 @@ import profileImage from '@/images/profile.jpg';
 import Title from "@/component/ui/title";
 import Paragraph from "@/component/ui/paragraph";
 import List from "@/component/ui/list";
-import Work from "@/component/work";
 import {differenceInYears} from 'date-fns';
-import {portfolioType} from "@/types/db";
+import WorkDb from "@/component/workDb";
 
 // Creating and exporting home page as default
 export default function HomePage():ReactNode {
-    // Defining works to be rendered
-    const works:portfolioType[] | [] = [];
-
     // Returning JSX
     return (
         <Page>
@@ -71,20 +67,7 @@ export default function HomePage():ReactNode {
                         <Title tier={2}>Latest Works</Title>
                     </header>
                     <main className={'flex flex-col gap-[30px]'}>
-                        {
-                            (works.length !== 0)
-                                ? works.map((item, index) => (
-                                    <Work
-                                        key={index}
-                                        name={item.title}
-                                        link={item.link}
-                                        date={item.date}
-                                        stack={item.stack}
-                                    >
-                                        {item.description}
-                                    </Work>
-                                )) : <Title className={'text-center'} tier={3}>There are no Works.</Title>
-                        }
+                        <WorkDb />
                     </main>
                 </section>
             </div>
