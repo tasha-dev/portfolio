@@ -1,5 +1,11 @@
 // Codes by mahdi tasha
 // Defining and exporting related types to database
+export interface useDbPropType {path?: string;}
+export interface useDbType<Type> {
+    isLoading: boolean;
+    data: Type;
+}
+
 export interface blogType {
     content: string;
     date: string;
