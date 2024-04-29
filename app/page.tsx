@@ -29,7 +29,7 @@ export default function HomePage():ReactNode {
                         <Title tier={2}>About</Title>
                     </header>
                     <main>
-                        <Paragraph>Hey there! 👋 Im Mahdi, a passionate front-end developer from Tehran, rocking the coding scene since 2021 ({differenceInYears(new Date(), new Date('1/1/2021'))} Years).</Paragraph>
+                        <Paragraph>Hey there! 👋 Im Mahdi, a passionate front-end developer from Tehran, rocking the coding scene since 2021 ({differenceInYears(new Date(), new Date('1/1/2020'))} Years).</Paragraph>
                         <Paragraph>🚀 Armed with a problem-solving superpower and an eye for design, I have earned my stripes as a top-notch developer.</Paragraph>
                         <Paragraph>🌐 Always hungry for knowledge and team collaborations🌟</Paragraph>
                         <Paragraph>Fueled by my passion for coding, I channel my skills towards creating a better world through innovative solutions that transcend digital boundaries and positively impact lives. 🌍💻</Paragraph>
