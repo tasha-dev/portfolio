@@ -5,6 +5,7 @@
 // Importing part
 import {ReactNode, useState, useEffect, useRef} from "react";
 import Header from "@/component/header";
+import FirstSection from "@/section/home/firstSection";
 
 // Creating and exporting home page as default
 export default function HomePage():ReactNode {
@@ -55,6 +56,7 @@ export default function HomePage():ReactNode {
     return (
         <>
             <Header showingSection={`#${showingSection}`}/>
+            <FirstSection />
             <section className={'section bg-orange-600 w-full h-[1000px]'} id="about" ref={(el) => {if (el) sectionsRef.current[0] = el}}>About</section>
             <section className={'section bg-red-600 w-full h-[1000px]'} id="projects" ref={(el) => {if (el) sectionsRef.current[1] = el}}>Projects</section>
             <section className={'section bg-purple-950 w-full h-[1000px]'} id="testimonials" ref={(el) => {if (el) sectionsRef.current[2] = el}}>Testimonials</section>

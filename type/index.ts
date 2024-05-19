@@ -11,3 +11,8 @@ export interface headerItemType {
     active: boolean;
     children: string;
 }
+
+export interface containerType {
+    children: ReactNode;
+    className?: string;
+}
