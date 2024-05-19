@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "lucide-react": "^0.378.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-tilt": "^1.0.2",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {

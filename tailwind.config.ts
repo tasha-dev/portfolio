@@ -14,6 +14,7 @@ const config: Config = {
       extend: {
           colors: {
               "gunMetal": '#272A3C',
+              "darkGunMetal": '#161A31',
               "richBlack": '#04071D',
               "chineseBlack": '#0C0E23',
               "lavenderGray": '#C1C2D3',
