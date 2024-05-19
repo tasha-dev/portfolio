@@ -1,6 +1,6 @@
 // Codes by mahdi tasha
 // Importing part
-import "@/styles"
+import "@/style/index.css"
 import {Inter} from "next/font/google"
 import {cn} from "@/util/cn";
 import {rootLayoutType} from "@/type";
@@ -33,7 +33,7 @@ export const metadata:Metadata = {
 // Creating and exporting root layout component as default
 export default function RootLayout({children}: rootLayoutType):ReactNode {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning className={'scroll-smooth'}>
             <body className={cn("min-h-screen", fontSans.className)}>
                 {children}
             </body>

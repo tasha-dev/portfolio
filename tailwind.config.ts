@@ -5,11 +5,20 @@ import type { Config } from "tailwindcss";
 // Defining the configs
 const config: Config = {
   content: [
-      './app/page.tsx',
+      './app/*.{tsx,jsx}',
       './component/*.{tsx,jsx}',
       './component/**/*.{tsx,jsx}',
   ],
-  theme: {},
+  theme: {
+      extend: {
+          colors: {
+              "gunMetal": '#272A3C',
+              "richBlack": '#04071D',
+              "chineseBlack": '#0C0E23',
+              "lavenderGray": '#C1C2D3',
+          }
+      }
+  },
   plugins: [],
 };
 
