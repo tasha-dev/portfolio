@@ -9,6 +9,7 @@ import FirstSection from "@/section/home/firstSection";
 import SecondSection from "@/section/home/secondSection";
 import ThirdSection from "@/section/home/thirdSection";
 import FourthSection from "@/section/home/fourthSection";
+import FifthSection from "@/section/home/fifthSection";
 
 // Creating and exporting home page as default
 export default function HomePage():ReactNode {
@@ -20,6 +21,7 @@ export default function HomePage():ReactNode {
             <SecondSection  />
             <ThirdSection />
             <FourthSection />
+            <FifthSection />
         </>
     );
 }
