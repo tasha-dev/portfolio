@@ -14,7 +14,7 @@ export default function ThirdSection():ReactNode {
     return (
         <section id={'projects'} className={'bg-richBlack'}>
             <Container>
-                <h2 className={'text-[48px] text-center -tracking-[2px] text-white font-bold mb-[50px]'}>
+                <h2 className={'lg:text-[48px] text-[36px] text-center -tracking-[2px] text-white font-bold mb-[50px]'}>
                     A small selection of <span className={'text-purple-500'}>recent projects</span>
                 </h2>
                 <div className={'grid lg:grid-cols-2 gap-[32px]'}>
@@ -37,7 +37,7 @@ export default function ThirdSection():ReactNode {
                         img={iwillbegoodImage.src}
                         stack={['react', 'next', 'tailwind', 'typescript', 'firebase']}
                         description={'Embarking on a side project close to my heart, I dedicated my skills as a front-end developer to bring to life I Will Be Good – a unique fusion of medication and meditation reporting. Crafting complete web pages for this project was not just a professional endeavor but a personal journey aimed at fostering comfort and gaining invaluable experience. Navigating the intricate balance between medication and meditation, I meticulously designed the web interface to be intuitive, providing a seamless user experience. This project, which also served as a much-needed app for my own well-being, allowed me to not only enhance my technical capabilities but also underscored the importance of merging technology with personal growth and self-care. The completed web pages stand as a testament to my commitment to continuous learning and the harmonious integration of technology into our daily lives.'}
-                        title={'Webimode'}
+                        title={'I Will Be Good'}
                     />
                     <Project
                         link={'https://watchlog.vercel.app/'}

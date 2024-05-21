@@ -20,8 +20,8 @@ export default function Project({link, img, title, description, stack}:projectTy
             </div>
             <h4 className={'lg:text-[32px] text-[20px] text-white font-bold tracking-[-2%] truncate block w-full mb-[20px]'}>{title}</h4>
             <p className={'text-lavenderGray leading-[130%] lg:text-[20px] text-[14px] font-normal line-clamp-3 mb-[20px]'}>{description}</p>
-            <div className={'flex items-center justify-between flex-wrap'}>
-                <div className={'flex items-center justify-start group '}>
+            <div className={'flex items-center justify-between flex-wrap gap-[20px]'}>
+                <div className={'flex items-center justify-start group'}>
                     {
                         stack.map((item, index) => (
                             <div key={index}
