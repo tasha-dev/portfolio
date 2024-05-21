@@ -15,6 +15,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-tilt": "^1.0.2",
+    "swiper": "^11.1.3",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {

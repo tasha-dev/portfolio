@@ -37,3 +37,8 @@ export interface stackIconType {
     icon: stack;
     className?: string;
 }
+
+export interface commentType {
+    children: string;
+    name: string;
+}
