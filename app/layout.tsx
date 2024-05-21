@@ -7,6 +7,7 @@ import {rootLayoutType} from "@/type";
 import {ReactNode} from "react";
 import {siteConfig} from "@/config";
 import {Metadata} from "next";
+import Footer from "@/component/footer";
 
 // Defining fonts
 const fontSans = Inter({
@@ -36,6 +37,7 @@ export default function RootLayout({children}: rootLayoutType):ReactNode {
         <html lang="en" suppressHydrationWarning className={'scroll-smooth'}>
             <body className={cn("min-h-screen", fontSans.className)}>
                 {children}
+                <Footer />
             </body>
         </html>
     )

@@ -42,3 +42,8 @@ export interface commentType {
     children: string;
     name: string;
 }
+
+export interface socialIconType {
+    icon: 'ig' | 'gh' | 'ld';
+    link: string;
+}
