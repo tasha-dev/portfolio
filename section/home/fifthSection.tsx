@@ -9,7 +9,7 @@ export default function FifthSection():ReactNode {
     // Returning JSX
     return (
         <section id={'contact'} className={'bg-richBlack bg-[url("../image/grid-pattern.png")] bg-cover'}>
-            <Container className={'min-h-dvh flex items-center justify-center'}>
+            <Container className={'lg:min-h-dvh flex items-center justify-center'}>
                 <div>
                     <h2 className={'lg:text-[48px] leading-[100%] text-[36px] text-center -tracking-[2px] text-white font-bold mb-[30px]'}>
                         Ready to take <span className={'text-purple-500'}>Your</span> digital <br/>
