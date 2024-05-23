@@ -20,7 +20,8 @@ export default function FourthSection():ReactNode {
                     spaceBetween={50}
                     slidesPerView={1}
                 >
-                    <SwiperSlide><Comment name={'Morteza.f'}>Their work is excellent and they are at the level of Senior Front. Accuracy in delivery and quality of codes and output are excellent. In general, their work was excellent in terms of scientific speed and output quality and codes, and I hope to have more cooperation with them in the future.</Comment></SwiperSlide>
+                    <SwiperSlide><Comment name={'Morteza.f'}>Their work is excellent and they are at the level of Senior Developer. Accuracy in delivery and quality of codes and output are excellent. In general, their work was excellent in terms of scientific speed and output quality and codes, and I hope to have more cooperation with them in the future.</Comment></SwiperSlide>
+                    <SwiperSlide><Comment name={'Parham.r'}>In the webimode project, we had very good working experience with each other and i recomment him to anyone</Comment></SwiperSlide>
                 </Swiper>
             </Container>
         </section>
