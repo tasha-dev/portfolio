@@ -14,7 +14,7 @@ export default function Project({link, img, title, description, stack}:projectTy
     // Returning JSX
     return (
         <Link href={link} className={'px-[24px] bg-gradient-to-br overflow-hidden from-richBlack to-chineseBlack py-[36px] rounded-[23px] border border-gunMetal group'}>
-            <div className={'bg-richBlack mb-[40px] px-[50px] lg:h-[330px] h-[212px] flex items-end justify-center rounded-[14px] overflow-hidden relative'}>
+            <div className={'bg-richBlack mb-[40px] lg:px-[50px] px-[10px] lg:h-[330px] h-[212px] flex items-end justify-center rounded-[14px] overflow-hidden relative'}>
                 <Image alt={'lighting image'} width={500} height={320} src={lightingImage.src} className={'absolute left-0 top-0 w-full h-full bg-cover'} />
                 <Image alt={title} width={500} height={320} src={img} className={'w-full lg:h-[300px] h-[234px] translate-y-[50px] object-cover rounded-[10px] transition-all duration-500 lg:group-hover:rotate-12'} />
             </div>
@@ -31,7 +31,7 @@ export default function Project({link, img, title, description, stack}:projectTy
                         ))
                     }
                 </div>
-                <h6 className={'lg:text-[20px] text-[14px] text-purple-500 flex items-center gap-2 opacity-0 transition-all duration-500 group-hover:opacity-100'}>
+                <h6 className={'lg:text-[20px] text-[14px] text-purple-500 flex items-center gap-2 lg:opacity-0 transition-all duration-500 group-hover:opacity-100'}>
                     Check Live Site
                     <ArrowUpRight className={'w-6 h-6'} />
                 </h6>
