@@ -6,7 +6,7 @@ import {Metadata} from "next";
 import siteConfig from "@/config/siteConfig";
 import {RootLayoutType} from "@/type";
 import {cn} from "@/util";
-import '@/style';
+import '@/style/index.css';
 
 // Defining font
 const interFont = Inter({
