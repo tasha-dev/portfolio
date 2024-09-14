@@ -7,6 +7,7 @@ import siteConfig from "@/config/siteConfig";
 import {RootLayoutType} from "@/type";
 import {cn} from "@/util";
 import '@/style/index.css';
+import Header from "@/component/header";
 
 // Defining font
 const interFont = Inter({
@@ -46,6 +47,7 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
                     interFont.className
                 )}
             >
+                <Header />
                 {children}
             </body>
         </html>
