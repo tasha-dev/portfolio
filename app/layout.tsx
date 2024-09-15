@@ -1,16 +1,17 @@
 // Codes by mahdi tasha
 // Importing part
 import {ReactNode} from "react";
-import {Inter} from 'next/font/google';
+import {JetBrains_Mono} from 'next/font/google';
 import {Metadata} from "next";
 import siteConfig from "@/config/siteConfig";
 import {RootLayoutType} from "@/type";
 import {cn} from "@/util";
 import '@/style/index.css';
 import Header from "@/component/header";
+import {ThemeProvider} from "next-themes";
 
 // Defining font
-const interFont = Inter({
+const jetbrainsMonoFont = JetBrains_Mono({
     display: 'swap',
     style: 'normal',
     weight: ['300', '400', '500', '600', '700', '800'],
@@ -40,15 +41,17 @@ export const metadata: Metadata = {
 export default function RootLayout({children}:RootLayoutType):ReactNode {
     // Returning JSX
     return (
-        <html>
+        <html suppressHydrationWarning>
             <body className={
                 cn(
                     'dark:bg-black bg-white overflow-x-hidden overflow-y-auto',
-                    interFont.className
+                    jetbrainsMonoFont.className
                 )}
             >
-                <Header />
-                {children}
+                <ThemeProvider attribute="class">
+                    <Header />
+                    {children}
+                </ThemeProvider>
             </body>
         </html>
     );

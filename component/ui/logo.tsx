@@ -20,7 +20,7 @@ export default function Logo():ReactNode {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <motion.path
-                    fill={'black'}
+                    className={'dark:fill-white fill-black'}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{duration: 0.5}}
@@ -30,8 +30,8 @@ export default function Logo():ReactNode {
             <motion.span
                 initial={{opacity: 0, y: -30}}
                 animate={{opacity: 1, y: 0}}
-                transition={{duration: 0.3, delay: 2}}
-                className={'text-black text-[28px]'}
+                transition={{duration: 0.5, delay: 1}}
+                className={'dark:text-white text-black text-[28px]'}
             >
                 Mahdi Tasha
             </motion.span>
