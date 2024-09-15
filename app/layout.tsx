@@ -11,6 +11,7 @@ import Header from "@/component/header";
 import {ThemeProvider} from "next-themes";
 import Container from "@/component/ui/container";
 import Footer from "@/component/footer";
+import BgHolder from "@/component/bgHolder";
 
 // Defining font
 const jetbrainsMonoFont = JetBrains_Mono({
@@ -46,15 +47,18 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
         <html suppressHydrationWarning>
             <body className={
                 cn(
-                    'dark:bg-black bg-white overflow-x-hidden overflow-y-auto',
+                    'dark:bg-black bg-white overflow-x-hidden overflow-y-auto dark:bg-[url(../image/bgGrid.svg)] bg-[url(../image/bgGridWhite.svg)] bg-auto bg-repeat',
                     jetbrainsMonoFont.className
                 )}
             >
                 <ThemeProvider attribute="class">
                     <Header />
-                    <Container size={'sm'} className={'border-x dark:border-x-white/20 border-x-black/20 min-h-screen'}>
-                        {children}
-                    </Container>
+                    <div className={'relative'}>
+                        <div className={'absolute top-0 left-0 w-full h-full bg-gradient-to-bl dark:from-black from-white to-transparent pointer-events-none'}/>
+                        <Container size={'sm'} className={'min-h-screen'}>
+                            {children}
+                        </Container>
+                    </div>
                     <Footer />
                 </ThemeProvider>
             </body>

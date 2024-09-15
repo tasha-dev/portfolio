@@ -10,7 +10,7 @@ import {Button} from "@/component/ui/button";
 export default function Footer():ReactNode {
     // Returning JSX
     return (
-        <footer className={'dark:bg-white/20 bg-black/20 border-t dark:border-t-white/20 border-t-black/20 '}>
+        <footer className={'dark:bg-white/20 bg-black/20 border-t dark:border-t-white/20 border-t-black/20 backdrop-blur-2xl'}>
             <Container className={'relative'}>
                 <PlusSvgDivider position={'top'}/>
                 <div className={'flex gap-5 flex-col mb-5 mt-10'}>
