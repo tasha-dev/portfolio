@@ -6,12 +6,22 @@
 import {ReactNode} from "react";
 import Link from 'next/link';
 import {motion} from 'framer-motion';
+import {LogoType} from "@/type";
+import {cn} from "@/util";
 
 // Creating and exporting logo component as default
-export default function Logo():ReactNode {
+export default function Logo({mq = false}:LogoType):ReactNode {
     // Returning JSX
     return (
-        <Link href={'/'} className={'flex items-center justify-start gap-5'}>
+        <Link
+            href={'/'}
+            className={cn(
+                'flex items-center justify-start',
+                (mq)
+                    ? 'lg:flex-row flex-col lg:gap-5 gap-2'
+                    : 'gap-5'
+            )}
+        >
             <svg
                 width="50"
                 height="50"
