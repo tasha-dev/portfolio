@@ -9,6 +9,7 @@ import {cn} from "@/util";
 import '@/style/index.css';
 import Header from "@/component/header";
 import {ThemeProvider} from "next-themes";
+import Container from "@/component/ui/container";
 
 // Defining font
 const jetbrainsMonoFont = JetBrains_Mono({
@@ -50,7 +51,9 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
             >
                 <ThemeProvider attribute="class">
                     <Header />
-                    {children}
+                    <Container size={'sm'} className={'border-x dark:border-x-white/20 border-x-black/20 min-h-screen'}>
+                        {children}
+                    </Container>
                 </ThemeProvider>
             </body>
         </html>
