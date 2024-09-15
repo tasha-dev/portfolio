@@ -63,4 +63,7 @@
   }
 
   .link-text {@apply font-medium text-primary underline underline-offset-8}
+  .heading-3 {@apply scroll-m-20 text-2xl font-bold tracking-tight}
+  .small {@apply text-sm font-medium leading-none;}
+  .p {@apply leading-7 [&:not(:first-child)]:mt-6}
 }
