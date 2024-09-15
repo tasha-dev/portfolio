@@ -62,15 +62,5 @@
 
   }
 
-}
-@layer base {
-  * {
-    @apply border-border;
-
-  }
-  body {
-    @apply bg-background text-foreground;
-
-  }
-
+  .link-text {@apply font-medium text-primary underline underline-offset-8}
 }
