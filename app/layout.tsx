@@ -11,7 +11,7 @@ import Header from "@/component/header";
 import {ThemeProvider} from "next-themes";
 import Container from "@/component/ui/container";
 import Footer from "@/component/footer";
-import BgHolder from "@/component/bgHolder";
+import ScrollPercentage from "@/component/scrollPercentage";
 
 // Defining font
 const jetbrainsMonoFont = JetBrains_Mono({
@@ -55,6 +55,7 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
                     <Header />
                     <div className={'relative'}>
                         <div className={'absolute top-0 left-0 w-full h-full bg-gradient-to-bl dark:from-black from-white to-transparent pointer-events-none'}/>
+                        <ScrollPercentage />
                         <Container size={'sm'} className={'min-h-screen'}>
                             {children}
                         </Container>
