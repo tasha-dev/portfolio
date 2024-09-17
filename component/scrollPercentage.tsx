@@ -34,7 +34,10 @@ export default function ScrollPercentage(): ReactNode {
                     style={{height: `${scrollPercentageValue}%`}}
                 />
             </div>
-            <div className={'lg:block hidden fixed z-[150] top-[50%] -translate-y-[50%] right-[20px] w-[200px] h-[200px] pointer-events-none'}>
+            <div
+                data-showing={(scrollPercentageValue > 0)}
+                className={'lg:block hidden fixed z-[150] top-[60%] left-[97%] w-[200px] h-[200px] pointer-events-none transition-all duration-1000 data-[showing="false"]:right-[-50%] data-[showing="true"]:right-[20px]'}
+            >
                 <Confetti
                     active={(scrollPercentageValue === 100)}
                     config={{

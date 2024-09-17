@@ -9,6 +9,7 @@ import Container from "@/component/ui/container";
 import ThemeToggle from "@/component/ui/themeToggle";
 import Link from "next/link";
 import PlusSvgDivider from "@/component/ui/plusSvgDivider";
+import {motion} from 'framer-motion';
 
 // Creating and exporting header component as default
 export default function Header():ReactNode {
@@ -18,12 +19,17 @@ export default function Header():ReactNode {
             <Container className={'flex items-center lg:justify-between justify-center relative'}>
                 <PlusSvgDivider />
                 <Logo mq/>
-                <div className={'lg:flex hidden items-center justify-center gap-5'}>
+                <motion.div
+                    className={'lg:flex hidden items-center justify-center gap-5'}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 0.5, delay: 3}}
+                >
                     <Link className={'link-text'} href={'/'}>Home</Link>
                     <Link className={'link-text'} href={'/blog'}>Blog</Link>
                     <Link className={'link-text'} href={'/contact'}>Contact</Link>
                     <ThemeToggle/>
-                </div>
+                </motion.div>
             </Container>
         </header>
     );

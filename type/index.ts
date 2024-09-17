@@ -11,3 +11,8 @@ export interface ContainerType {
     size?: 'sm' | 'lg';
     className?: string;
 }
+
+export interface PageLayoutType {
+    className?: string;
+    children: ReactNode;
+}

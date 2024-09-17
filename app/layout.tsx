@@ -12,6 +12,7 @@ import {ThemeProvider} from "next-themes";
 import Container from "@/component/ui/container";
 import Footer from "@/component/footer";
 import ScrollPercentage from "@/component/scrollPercentage";
+import PageLayout from "@/component/pageLayout";
 
 // Defining font
 const jetbrainsMonoFont = JetBrains_Mono({
@@ -54,10 +55,12 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
                 <ThemeProvider attribute="class">
                     <Header />
                     <div className={'relative'}>
-                        <div className={'absolute top-0 left-0 w-full h-full bg-gradient-to-bl dark:from-black from-white to-transparent pointer-events-none'}/>
+                        <div className={'absolute top-0 left-0 w-full h-full z-0 bg-gradient-to-bl dark:from-black from-white to-transparent pointer-events-none'}/>
                         <ScrollPercentage />
-                        <Container size={'sm'} className={'min-h-screen'}>
-                            {children}
+                        <Container size={'sm'} className={'min-h-screen pt-[100px] pb-[40px] z-20 relative'}>
+                            <PageLayout>
+                                {children}
+                            </PageLayout>
                         </Container>
                     </div>
                     <Footer />

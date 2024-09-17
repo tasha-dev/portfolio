@@ -7,7 +7,7 @@ export default function HomePage():ReactNode {
     // Returning JSX
     return (
         <div>
-            <h1>Home Page</h1>
+            <div className={'w-full h-[1000px] bg-red-600'} />
         </div>
     );
 }
