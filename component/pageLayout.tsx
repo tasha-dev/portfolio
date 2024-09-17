@@ -6,12 +6,16 @@
 import {ReactNode} from "react";
 import {motion} from 'framer-motion';
 import {PageLayoutType} from "@/type";
+import {cn} from "@/util";
 
 // Creating and exporting page layout component as default
 export default function PageLayout({className, children}:PageLayoutType):ReactNode {
     // Returning JSX
     return (
-        <div className={className}>
+        <div className={cn(
+            'content',
+            className
+        )}>
             <motion.div
                 initial={{
                     opacity: 0,

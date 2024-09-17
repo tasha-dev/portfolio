@@ -66,4 +66,17 @@
   .heading-3 {@apply scroll-m-20 text-2xl font-bold tracking-tight}
   .small {@apply text-sm font-medium leading-none;}
   .p {@apply leading-7 [&:not(:first-child)]:mt-6}
+
+  .content h1 {@apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;}
+  .content h2 {@apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0;}
+  .content h3 {@apply scroll-m-20 text-2xl font-semibold tracking-tight;}
+  .content h4 {@apply scroll-m-20 text-xl font-semibold tracking-tight;}
+  .content p {@apply leading-7 [&:not(:first-child)]:mt-6;}
+  .content blockquote {@apply mt-6 border-l-2 pl-6 italic;}
+  .content table {@apply w-full;}
+  .content table tr {@apply m-0 border-t p-0 even:bg-muted;}
+  .content table th {@apply border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right;}
+  .content table td {@apply border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right;}
+  .content ul {@apply my-6 ml-6 list-disc [&>li]:mt-2;}
+  .content code {@apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;}
 }

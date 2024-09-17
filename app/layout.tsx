@@ -57,7 +57,7 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
                     <div className={'relative'}>
                         <div className={'absolute top-0 left-0 w-full h-full z-0 bg-gradient-to-bl dark:from-black from-white to-transparent pointer-events-none'}/>
                         <ScrollPercentage />
-                        <Container size={'sm'} className={'min-h-screen pt-[100px] pb-[40px] z-20 relative'}>
+                        <Container size={'sm'} className={'min-h-screen lg:pt-[100px] pt-[150px] pb-[40px] z-20 relative'}>
                             <PageLayout>
                                 {children}
                             </PageLayout>
