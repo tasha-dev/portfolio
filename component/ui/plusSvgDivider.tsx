@@ -11,13 +11,13 @@ export default function PlusSvgDivider({position = "bottom"}:PlusSvgDividerType)
     return (
         <>
             <Plus className={cn(
-                'pointer-events-none absolute left-0 -translate-x-[50%] block w-5 h-5 dark:text-white text-black',
+                'pointer-events-none absolute left-0 -translate-x-[50%] w-5 h-5 dark:text-white text-black lg:block hidden',
                 (position == 'bottom')
                     ? 'bottom-0 translate-y-[50%]'
                     : 'top-0 -translate-y-[50%]'
             )} />
             <Plus className={cn(
-                'pointer-events-none absolute right-0  translate-x-[50%] block w-5 h-5 dark:text-white text-black',
+                'pointer-events-none absolute right-0  translate-x-[50%] w-5 h-5 dark:text-white text-black lg:block hidden',
                 (position == 'bottom')
                     ? 'bottom-0 translate-y-[50%]'
                     : 'top-0 -translate-y-[50%]'

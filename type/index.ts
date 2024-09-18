@@ -16,3 +16,12 @@ export interface PageLayoutType {
     className?: string;
     children: ReactNode;
 }
+
+export interface ProjectType {
+    link: string;
+    img?: string;
+    title: string;
+    description: string;
+    status: 'done' | 'in-progress' | 'failed';
+    useVpn: boolean;
+}
