@@ -6,6 +6,7 @@ import {ReactNode} from "react";
 export interface RootLayoutType {children: ReactNode;}
 export interface LogoType {mq?: boolean;}
 export interface PlusSvgDividerType {position?: 'bottom' | 'top';}
+export interface SkillsType {title: string;}
 export interface ContainerType {
     children: ReactNode;
     size?: 'sm' | 'lg';
@@ -26,6 +27,10 @@ export interface ProjectType {
     useVpn: boolean;
 }
 
-export interface SkillsType {
+export interface ExperienceType {
     title: string;
+    description: string;
+    fromDate: Date;
+    untillDate: Date | 'present';
+    company: string;
 }

@@ -2,9 +2,11 @@
 // Importing part
 import {ReactNode} from "react";
 import Projects from '@/component/project';
-import DummyProjects from "@/dummyData/projects";
 import Skill from "@/component/skill";
+import Experience from "@/component/experience";
+import DummyProjects from "@/dummyData/projects";
 import DummySkills from "@/dummyData/skills";
+import DummyExperience from "@/component/experience";
 
 // Creating and exporting home page as default
 export default function HomePage():ReactNode {
@@ -49,6 +51,14 @@ export default function HomePage():ReactNode {
                                 />
                             ))
                         }
+                    </div>
+                </main>
+            </section>
+            <section>
+                <main>
+                    <h3 className={'mb-5'}>Experience</h3>
+                    <div className={'ml-[40px]'}>
+                        <div>WOCK</div>
                     </div>
                 </main>
             </section>
