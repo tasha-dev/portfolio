@@ -25,3 +25,7 @@ export interface ProjectType {
     status: 'done' | 'in-progress' | 'failed';
     useVpn: boolean;
 }
+
+export interface SkillsType {
+    title: string;
+}

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         default: siteConfig.name
     },
     description: siteConfig.description,
-    keywords: [],
+    keywords: ["Front-End Developer", "React.js", "Next.js", "JavaScript", "TypeScript", "TailwindCSS", "HTML", "CSS", "Sass", "BEM", "Responsive Design", "Mobile First", "Web Development", "Freelance Developer", "UI/UX", "Git", "Version Control", "API Integration", "Component-based Design", "React Native", "PWA", "Vite", "Team Collaboration", "JavaScript Frameworks", "Custom Hooks", "Freelancing", "Tehran", "Iran",],
     themeColor: '#000000',
     openGraph: {
         type: "website",

@@ -3,6 +3,8 @@
 import {ReactNode} from "react";
 import Projects from '@/component/project';
 import DummyProjects from "@/dummyData/projects";
+import Skill from "@/component/skill";
+import DummySkills from "@/dummyData/skills";
 
 // Creating and exporting home page as default
 export default function HomePage():ReactNode {
@@ -29,6 +31,21 @@ export default function HomePage():ReactNode {
                                     img={item.img}
                                     status={item.status}
                                     useVpn={item.useVpn}
+                                />
+                            ))
+                        }
+                    </div>
+                </main>
+            </section>
+            <section>
+                <main>
+                    <h3 className={'mb-5'}>Skills</h3>
+                    <div className={'flex items-center justify-start gap-5 overflow-auto'}>
+                        {
+                            DummySkills.map((item, index) => (
+                                <Skill
+                                    key={index}
+                                    title={item.title}
                                 />
                             ))
                         }
