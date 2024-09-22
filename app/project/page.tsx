@@ -5,7 +5,7 @@ import DummyProjects from "@/dummyData/projects";
 import Projects from "@/component/project";
 
 // Creating and exporting projects page as default
-export default function Page():ReactNode {
+export default function ProjectPage():ReactNode {
     // Returning JSX
     return (
         <>

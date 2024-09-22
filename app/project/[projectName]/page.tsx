@@ -11,7 +11,7 @@ import Link from "next/link";
 import PageLayout from "@/component/pageLayout";
 
 // Creating and exporting Project single page as default
-export default function ProjectPage({params: {projectName}}:ProjectPageType):ReactNode {
+export default function SingleProjectPage({params: {projectName}}:ProjectPageType):ReactNode {
     // Getting data of project from dummy date files
     const findedProjectObj = Projects.find((item) => item.portfolioLink === `/project/${projectName}`);
 

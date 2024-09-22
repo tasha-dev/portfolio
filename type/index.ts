@@ -42,3 +42,12 @@ export interface ProjectPageType {
         projectName: string;
     }
 }
+
+export interface BlogsType {
+    tags: string[];
+    description: string;
+    content: string;
+    title: string;
+    date: string;
+    image?: string;
+}
