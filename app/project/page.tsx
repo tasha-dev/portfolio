@@ -8,7 +8,7 @@ import Projects from "@/component/project";
 export default function Page():ReactNode {
     // Returning JSX
     return (
-        <div className={'flex flex-col gap-20'}>
+        <>
             <h1>Projects</h1>
             <div className={'grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-[10px]'}>
                 {
@@ -26,6 +26,6 @@ export default function Page():ReactNode {
                     ))
                 }
             </div>
-        </div>
+        </>
     );
 }

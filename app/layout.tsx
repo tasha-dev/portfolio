@@ -12,8 +12,8 @@ import {ThemeProvider} from "next-themes";
 import Container from "@/component/ui/container";
 import Footer from "@/component/footer";
 import ScrollPercentage from "@/component/scrollPercentage";
-import PageLayout from "@/component/pageLayout";
 import {Toaster} from "@/component/ui/sonner";
+import PageLayout from "@/component/pageLayout";
 
 // Defining font
 const jetbrainsMonoFont = JetBrains_Mono({

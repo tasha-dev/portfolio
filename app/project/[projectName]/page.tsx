@@ -8,6 +8,7 @@ import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/compon
 import {GlobeLock} from "lucide-react";
 import {Badge} from "@/component/ui/badge";
 import Link from "next/link";
+import PageLayout from "@/component/pageLayout";
 
 // Creating and exporting Project single page as default
 export default function ProjectPage({params: {projectName}}:ProjectPageType):ReactNode {
@@ -17,7 +18,7 @@ export default function ProjectPage({params: {projectName}}:ProjectPageType):Rea
     // Conditional rendering
     if (findedProjectObj) {
         return (
-            <div className={'flex flex-col gap-20'}>
+            <>
                 {
                     (findedProjectObj.img)
                         ? (
@@ -80,13 +81,13 @@ export default function ProjectPage({params: {projectName}}:ProjectPageType):Rea
                         <p>{findedProjectObj.description}</p>
                     </main>
                 </section>
-            </div>
+            </>
         );
     } else {
         return (
-            <div className={'flex flex-col gap-20'}>
+            <>
                 <p className={'text-center'}>The project you were looking for is not found</p>
-            </div>
+            </>
         );
     }
 }

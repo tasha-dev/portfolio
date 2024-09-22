@@ -13,7 +13,7 @@ import Welcome from "@/component/welcome";
 export default function HomePage():ReactNode {
     // Returning JSX
     return (
-        <div className={'flex flex-col gap-20'}>
+        <>
             <Welcome />
             <section>
                 <main>
@@ -59,6 +59,6 @@ export default function HomePage():ReactNode {
                     </div>
                 </main>
             </section>
-        </div>
+        </>
     );
 }

@@ -14,6 +14,7 @@ import {Card, CardContent, CardHeader} from "@/component/ui/card";
 import {Textarea} from "@/component/ui/textarea";
 import {toast} from "sonner";
 import {LoaderCircle} from "lucide-react";
+import PageLayout from "@/component/pageLayout";
 
 // Defining formSchema
 const formSchema = z.object({
@@ -68,7 +69,7 @@ export default function ContactPage():ReactNode {
 
     // Returning JSX
     return (
-        <div className={'flex flex-col gap-20'}>
+        <>
             <section className={'w-full h-[500px] lg:p-[50px] p-[25px] lg:rounded-[12px] rounded-[10px] bg-[url("../image/walpaperPrefrence.jpg")] bg-cover flex items-end justify-start'}>
                 <main>
                     <h1 className={'text-white'}>Hi, Im Mahdi Tasha</h1>
@@ -127,6 +128,6 @@ export default function ContactPage():ReactNode {
                     </Form>
                 </CardContent>
             </Card>
-        </div>
+        </>
     )
 }
