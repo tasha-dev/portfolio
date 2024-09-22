@@ -9,10 +9,10 @@ import {GlobeLock} from "lucide-react";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger,} from "@/component/ui/tooltip"
 
 // Creating and exporting project component as default
-export default function Projects({link, useVpn, status, img, title, description}:ProjectType):ReactNode {
+export default function Projects({link, useVpn, status, img, title, description, portfolioLink}:ProjectType):ReactNode {
     // Returning JSX
     return (
-        <Link href={link} className={'block w-[400px] shrink-0'}>
+        <Link href={portfolioLink} className={'block w-[400px] shrink-0'}>
             {
                 (img)
                     ? (

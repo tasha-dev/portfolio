@@ -19,6 +19,7 @@ export interface PageLayoutType {
 }
 
 export interface ProjectType {
+    portfolioLink: string;
     link: string;
     img?: string;
     title: string;
@@ -33,4 +34,10 @@ export interface ExperienceType {
     fromDate: Date;
     untillDate: Date | 'present';
     company: string;
+}
+
+export interface ProjectPageType {
+    params: {
+        projectName: string;
+    }
 }

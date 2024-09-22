@@ -2,8 +2,6 @@
 // Importing part
 import { useState, useEffect } from 'react';
 
-// Define the type for the hook's return value
-type UseScrollPercentage = () => number;
 
 // Creating and exporting useScrollPercentage custom hook as default
 export default function useScrollPercentage() {

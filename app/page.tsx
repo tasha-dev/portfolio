@@ -26,6 +26,7 @@ export default function HomePage():ReactNode {
                         {
                             DummyProjects.map((item, index) => (
                                 <Projects
+                                    portfolioLink={item.portfolioLink}
                                     key={index}
                                     title={item.title}
                                     description={item.description}
