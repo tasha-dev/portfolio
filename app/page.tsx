@@ -6,7 +6,7 @@ import Skill from "@/component/skill";
 import Experience from "@/component/experience";
 import DummyProjects from "@/dummyData/projects";
 import DummySkills from "@/dummyData/skills";
-import DummyExperience from "@/component/experience";
+import DummyExperiences from "@/dummyData/experiences";
 import Welcome from "@/component/welcome";
 
 // Creating and exporting home page as default
@@ -54,8 +54,20 @@ export default function HomePage():ReactNode {
             <section>
                 <main>
                     <h3 className={'mb-5'}>Experience</h3>
-                    <div className={'ml-[40px]'}>
-                        <div>WOCK</div>
+                    <div className={'flex flex-col gap-20 relative w-full'}>
+                        {
+                            DummyExperiences.map((item, index) => (
+                                <Experience
+                                    isLast={(index + 1 === DummyExperiences.length)}
+                                    key={index}
+                                    title={item.title}
+                                    description={item.description}
+                                    company={item.company}
+                                    fromDate={item.fromDate}
+                                    untillDate={item.untillDate}
+                                />
+                            ))
+                        }
                     </div>
                 </main>
             </section>

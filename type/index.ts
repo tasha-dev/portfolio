@@ -34,6 +34,7 @@ export interface ExperienceType {
     fromDate: Date;
     untillDate: Date | 'present';
     company: string;
+    isLast?: boolean;
 }
 
 export interface ProjectPageType {

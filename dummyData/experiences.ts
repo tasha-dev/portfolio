@@ -3,7 +3,7 @@
 import {ExperienceType} from "@/type";
 
 // Creating and exporting dummy data of experiences
-const Experiences:ExperienceType[] = [
+const DummyExperiences:ExperienceType[] = [
     {
         description: 'At Webimode, I\'ve found a nurturing environment where my skills as a Front End Developer have flourished since 2023. Working alongside our talented team, I\'ve not only refined my technical abilities but also learned the essential soft skills crucial for success in any professional setting. Collaboration is deeply ingrained in our culture, teaching me the value of teamwork and the art of harmonizing diverse talents to achieve collective excellence. Additionally, the fast-paced nature of our work has honed my time management skills, allowing me to balance multiple projects and deadlines effectively. But above all, it\'s the unwavering dedication to hard work that defines our team at Webimode, inspiring me to push the boundaries of my capabilities and strive for continual improvement in every task I undertake.',
         title: 'FrontEnd Developer',
@@ -19,4 +19,4 @@ const Experiences:ExperienceType[] = [
     }
 ];
 
-export default Experiences;
+export default DummyExperiences;
