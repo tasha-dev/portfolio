@@ -13,6 +13,7 @@ import Container from "@/component/ui/container";
 import Footer from "@/component/footer";
 import ScrollPercentage from "@/component/scrollPercentage";
 import PageLayout from "@/component/pageLayout";
+import {Toaster} from "@/component/ui/sonner";
 
 // Defining font
 const jetbrainsMonoFont = JetBrains_Mono({
@@ -53,6 +54,7 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
                 )}
             >
                 <ThemeProvider attribute="class">
+                    <Toaster position={'bottom-center'} richColors />
                     <Header />
                     <div className={'relative'}>
                         <div className={'absolute top-0 left-0 w-full h-full z-0 bg-gradient-to-bl dark:from-black from-white to-transparent pointer-events-none'}/>

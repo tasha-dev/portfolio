@@ -27,10 +27,15 @@ export default function ProjectPage({params: {projectName}}:ProjectPageType):Rea
                                     alt={findedProjectObj.title}
                                     width={1000}
                                     height={500}
-                                    className={'w-full h-[500px] top-0 left-0 lg:rounded-[12px] rounded-[10px] object-cover'}
+                                    className={'w-full h-[500px] lg:rounded-[12px] rounded-[10px] object-cover'}
                                 />
                             </Link>
-                        ) : false
+                        ) : (
+                            <Link
+                                href={findedProjectObj.link}
+                                className={'w-full h-[500px] lg:rounded-[12px] rounded-[10px] bg-gradient-to-bl from-pink-600 to-violet-600'}
+                            />
+                        )
                 }
                 <section>
                     <main>
