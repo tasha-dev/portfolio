@@ -10,7 +10,7 @@ import dayjs from "dayjs";
 export default function Blog({title, content, description, tags, date, image}:BlogsType):ReactNode {
     // Returning JSX
     return (
-        <Link href={`/${btoa(title)}`}>
+        <Link href={`/blog/${title}`}>
             {
                 (image)
                     ? (

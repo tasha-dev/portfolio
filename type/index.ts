@@ -51,3 +51,9 @@ export interface BlogsType {
     date: string;
     image?: string;
 }
+
+export interface BlogPageType {
+    params: {
+        blogName: string;
+    }
+}
