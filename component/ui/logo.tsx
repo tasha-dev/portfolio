@@ -13,7 +13,7 @@ export default function Logo():ReactNode {
     return (
         <Link
             href={'/'}
-            className={'flex items-center justify-start'}
+            className={'flex items-center justify-start gap-5'}
         >
             <svg
                 width="50"

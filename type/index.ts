@@ -56,3 +56,7 @@ export interface BlogPageType {
         blogName: string;
     }
 }
+
+export interface ThemeToggleType {
+    hasText?: boolean;
+}
