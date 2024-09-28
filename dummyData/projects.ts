@@ -52,7 +52,7 @@ const DummyProjects: ProjectType[] = [
         status: 'done',
         useVpn: true
     }, {
-        img: BlogifyImage.src,
+        img: MarkioImage.src,
         link: 'https:/markio.vercel.app/',
         title: 'Markio',
         portfolioLink: '/project/markio',
@@ -60,7 +60,7 @@ const DummyProjects: ProjectType[] = [
         status: 'done',
         useVpn: true
     }, {
-        img: MarkioImage.src,
+        img: BlogifyImage.src,
         link: 'https://blogify-swart.vercel.app/',
         title: 'Blogify',
         portfolioLink: '/project/blogify',
