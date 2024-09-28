@@ -6,21 +6,14 @@
 import {ReactNode} from "react";
 import Link from 'next/link';
 import {motion} from 'framer-motion';
-import {LogoType} from "@/type";
-import {cn} from "@/util";
 
 // Creating and exporting logo component as default
-export default function Logo({mq = false}:LogoType):ReactNode {
+export default function Logo():ReactNode {
     // Returning JSX
     return (
         <Link
             href={'/'}
-            className={cn(
-                'flex items-center justify-start',
-                (mq)
-                    ? 'lg:flex-row flex-col lg:gap-5 gap-2'
-                    : 'gap-5'
-            )}
+            className={'flex items-center justify-start'}
         >
             <svg
                 width="50"
@@ -41,7 +34,7 @@ export default function Logo({mq = false}:LogoType):ReactNode {
                 initial={{opacity: 0, y: -30}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.5, delay: 1}}
-                className={'dark:text-white text-black text-[28px]'}
+                className={'dark:text-white text-black text-[28px] lg:block hidden'}
             >
                 Mahdi Tasha
             </motion.span>

@@ -4,7 +4,6 @@ import {ReactNode} from "react";
 
 // Creating and exporting type of components
 export interface RootLayoutType {children: ReactNode;}
-export interface LogoType {mq?: boolean;}
 export interface PlusSvgDividerType {position?: 'bottom' | 'top';}
 export interface SkillsType {title: string;}
 export interface ContainerType {
