@@ -10,7 +10,7 @@ export default function BlogPage():ReactNode {
     return (
         <>
             <h1>Blogs</h1>
-            <div className={'grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-[10px]'}>
+            <div className={'grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-8'}>
                 {
                     DummyBlogs.map((item, index) => (
                         <Blogs

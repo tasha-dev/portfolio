@@ -22,20 +22,30 @@ export default function SingleProjectPage({params: {projectName}}:ProjectPageTyp
                 {
                     (findedProjectObj.img)
                         ? (
-                            <Link href={findedProjectObj.link}>
+                            <Link
+                                href={findedProjectObj.link}
+                                className={'group overflow-hidden lg:rounded-[12px] rounded-[10px] h-[500px] relative'}
+                            >
                                 <Image
                                     src={findedProjectObj.img}
                                     alt={findedProjectObj.title}
                                     width={1000}
                                     height={500}
-                                    className={'w-full h-[500px] lg:rounded-[12px] rounded-[10px] object-cover'}
+                                    className={'w-full h-full object-cover block'}
                                 />
+                                <div className={'absolute w-full h-full top-0 left-0 bg-background/20 backdrop-blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100 p-5 flex items-center justify-center'}>
+                                    <p className={'pointer-events-none text-foreground text-center w-[300px] font-bold text-xl'}>Click Here to see Realtime Version of the project</p>
+                                </div>
                             </Link>
                         ) : (
                             <Link
                                 href={findedProjectObj.link}
-                                className={'w-full h-[500px] lg:rounded-[12px] rounded-[10px] bg-gradient-to-bl from-pink-600 to-violet-600'}
-                            />
+                                className={'group overflow-hidden lg:rounded-[12px] rounded-[10px] h-[500px] relative bg-gradient-to-bl from-pink-600 to-violet-600'}
+                            >
+                                <div className={'absolute w-full h-full top-0 left-0 bg-background/20 backdrop-blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100 p-5 flex items-center justify-center'}>
+                                    <p className={'pointer-events-none text-foreground text-center w-[300px] font-bold text-xl'}>Click Here to see Realtime Version of the project</p>
+                                </div>
+                            </Link>
                         )
                 }
                 <section>

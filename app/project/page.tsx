@@ -10,10 +10,11 @@ export default function ProjectPage():ReactNode {
     return (
         <>
             <h1>Projects</h1>
-            <div className={'grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-[10px]'}>
+            <div className={'grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-8'}>
                 {
                     DummyProjects.map((item, index) => (
                         <Projects
+                            widthFull
                             portfolioLink={item.portfolioLink}
                             key={index}
                             title={item.title}

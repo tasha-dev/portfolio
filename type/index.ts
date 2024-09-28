@@ -18,6 +18,7 @@ export interface PageLayoutType {
 }
 
 export interface ProjectType {
+    widthFull?: boolean;
     portfolioLink: string;
     link: string;
     img?: string;

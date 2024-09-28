@@ -7,12 +7,19 @@ import Image from 'next/image';
 import {Badge} from "@/component/ui/badge"
 import {GlobeLock} from "lucide-react";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger,} from "@/component/ui/tooltip"
+import {cn} from "@/util";
 
 // Creating and exporting project component as default
-export default function Projects({link, useVpn, status, img, title, description, portfolioLink}:ProjectType):ReactNode {
+export default function Projects({link, useVpn, status, img, title, description, portfolioLink, widthFull = false}:ProjectType):ReactNode {
     // Returning JSX
     return (
-        <Link href={portfolioLink} className={'block w-[400px] shrink-0'}>
+        <Link
+            href={portfolioLink}
+            className={cn(
+                'block shrink-0',
+                (widthFull) ? 'w-full' : 'w-[400px]'
+            )}
+        >
             {
                 (img)
                     ? (
