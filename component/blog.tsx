@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {BlogsType} from "@/type";
 import {Button} from "@/component/ui/button";
+import {btoa} from 'abab';
 
 // Creating and exporting blog component as default
 export default function Blog({title,description, image}:BlogsType):ReactNode {

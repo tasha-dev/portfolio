@@ -19,10 +19,6 @@ export default function Footer(): ReactNode {
     // Checking if the element is viewable
     const isInView = useInView(ref, {once: true});
 
-    useEffect(() => {
-        console.log(isInView)
-    }, [isInView])
-
     // Returning JSX
     return (
         <footer
