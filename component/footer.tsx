@@ -67,7 +67,7 @@ export default function Footer(): ReactNode {
                             project!</p>
                         <Link href={'/contact'}><Button tabIndex={-1}>Let’s work together !</Button></Link>
                     </div>
-                    <div className={'flex items-center justify-between gap-5'}>
+                    <div className={'flex items-center justify-between gap-5 flex-wrap'}>
                         <p className="small">
                             © {new Date().getFullYear()} Mahdi Tasha. All rights reserved.
                         </p>
