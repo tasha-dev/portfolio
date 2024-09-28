@@ -7,7 +7,7 @@ export default function Welcome():ReactNode {
     // Returning JSX
     return (
         <section
-            className={'w-full h-[500px] lg:p-[50px] p-[25px] lg:rounded-[12px] rounded-[10px] bg-[url("../image/walpaperPrefrence.jpg")] bg-cover flex items-end justify-start'}>
+            className={'w-full min-h-[500px] lg:p-[50px] p-[25px] lg:rounded-[12px] rounded-[10px] bg-[url("../image/walpaperPrefrence.jpg")] bg-cover flex items-end justify-start'}>
             <main>
                 <h1 className={'text-white'}>Hi, Im Mahdi Tasha</h1>
                 <p className={'text-white'}>A skilled front-end developer based in Tehran, specializing in creating
