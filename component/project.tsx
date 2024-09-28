@@ -24,13 +24,13 @@ export default function Projects({link, useVpn, status, img, title, description,
                 (img)
                     ? (
                         <Image
-                            className={'block object-cover w-full h-[200px] rounded-xl mb-3 border dark:border-black/20 border-white/20'}
+                            className={'block object-cover w-full h-[200px] rounded-xl mb-3'}
                             src={img}
                             alt={title}
                             width={200}
                             height={150}
                         />
-                    ) : (<div className={'bg-gradient-to-bl w-full h-[200px] from-pink-600 to-violet-600 mb-3 rounded-xl border dark:border-black/20 border-white/20'}/>)
+                    ) : (<div className={'bg-gradient-to-bl w-full h-[200px] from-pink-600 to-violet-600 mb-3 rounded-xl'}/>)
             }
             <div className={'flex items-center justify-between gap-3'}>
                 <h4 className={'truncate'}>{title}</h4>
