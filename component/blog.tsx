@@ -4,14 +4,13 @@ import {ReactNode} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {BlogsType} from "@/type";
-import dayjs from "dayjs";
 import {Button} from "@/component/ui/button";
 
 // Creating and exporting blog component as default
-export default function Blog({title, content, description, tags, date, image}:BlogsType):ReactNode {
+export default function Blog({title,description, image}:BlogsType):ReactNode {
     // Returning JSX
     return (
-        <Link href={`/blog/${title}`}>
+        <Link href={`/blog/${btoa(title.toLowerCase())}`}>
             {
                 (image)
                     ? (
@@ -22,13 +21,15 @@ export default function Blog({title, content, description, tags, date, image}:Bl
                             width={200}
                             height={150}
                         />
-                    ) : (<div className={'bg-gradient-to-bl w-full h-[200px] from-pink-600 to-violet-600 mb-3 rounded-xl'}/>)
+                    ) : (
+                        <div
+                            className={'bg-gradient-to-bl w-full h-[200px] from-pink-600 to-violet-600 mb-3 rounded-xl'}
+                        />
+                    )
             }
-            <div className={'space-y-3'}>
-                <h4 className={'truncate'}>{title}</h4>
-                <p className={'line-clamp-2'}>{description}</p>
-                <Button tabIndex={-1}>Read Now</Button>
-            </div>
+            <h4 className={'truncate'}>{title}</h4>
+            <p className={'line-clamp-2'}>{description}</p>
+            <Button className={'mt-3'} tabIndex={-1}>Read Now</Button>
         </Link>
     );
 }

@@ -10,7 +10,7 @@ import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger,} from "@/compo
 import {cn} from "@/util";
 
 // Creating and exporting project component as default
-export default function Projects({link, useVpn, status, img, title, description, portfolioLink, widthFull = false}:ProjectType):ReactNode {
+export default function Projects({useVpn, status, img, title, description, portfolioLink, widthFull = false}:ProjectType):ReactNode {
     // Returning JSX
     return (
         <Link
