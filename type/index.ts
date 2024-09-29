@@ -61,3 +61,10 @@ export interface BlogPageType {
 export interface ThemeToggleType {
     hasText?: boolean;
 }
+
+export interface QuickLinkType {
+    type: 'link' | 'pdf-resume';
+    title: string;
+    link?: string;
+    pdfFile?: string;
+}

@@ -12,6 +12,8 @@ import PlusSvgDivider from "@/component/ui/plusSvgDivider";
 import {motion} from 'framer-motion';
 import {Button} from "@/component/ui/button";
 import {Menu} from "lucide-react";
+import QuickLink from "@/component/quickLink";
+import DummyQuickLinks from "@/dummyData/quickLinks";
 import {
     Drawer,
     DrawerClose,
@@ -37,9 +39,17 @@ export default function Header():ReactNode {
                     animate={{opacity: 1}}
                     transition={{duration: 0.5, delay: 3}}
                 >
-                    <Link className={'link-text'} href={'/'}>Home</Link>
-                    <Link className={'link-text'} href={'/blog'}>Blog</Link>
-                    <Link className={'link-text'} href={'/contact'}>Contact</Link>
+                    {
+                        DummyQuickLinks.map((item, index) => (
+                            <QuickLink
+                                key={index}
+                                type={item.type}
+                                title={item.title}
+                                link={item.link}
+                                pdfFile={item.pdfFile}
+                            />
+                        ))
+                    }
                     <ThemeToggle/>
                 </motion.div>
                 <motion.div
@@ -64,9 +74,19 @@ export default function Header():ReactNode {
                             <div className={'px-4 pt-2 space-y-3 h-[30dvh] overflow-auto'}>
                                 <h6>Links :</h6>
                                 <ul className={'flex flex-col gap-2 ml-5'}>
-                                    <li><Link className={'link-text'} href={'/'}>Home</Link></li>
-                                    <li><Link className={'link-text'} href={'/blog'}>Blog</Link></li>
-                                    <li><Link className={'link-text'} href={'/contact'}>Contact</Link></li>
+                                    {
+                                        DummyQuickLinks.map((item, index) => (
+                                            <li>
+                                                <QuickLink
+                                                    key={index}
+                                                    type={item.type}
+                                                    title={item.title}
+                                                    link={item.link}
+                                                    pdfFile={item.pdfFile}
+                                                />
+                                            </li>
+                                        ))
+                                    }
                                 </ul>
                             </div>
                             <DrawerFooter>

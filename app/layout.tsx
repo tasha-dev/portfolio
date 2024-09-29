@@ -49,7 +49,7 @@ export default function RootLayout({children}:RootLayoutType):ReactNode {
         <html suppressHydrationWarning>
             <body className={
                 cn(
-                    'dark:bg-black bg-white overflow-x-hidden overflow-y-auto dark:bg-[url(../image/bgGrid.svg)] bg-[url(../image/bgGridWhite.svg)] bg-auto bg-repeat',
+                    'dark:bg-black bg-white overflow-x-hidden overflow-y-auto dark:bg-[url(../image/bgGrid.svg)] bg-[url(../image/bgGridWhite.svg)] bg-auto bg-repeat content',
                     jetbrainsMonoFont.className
                 )}
             >

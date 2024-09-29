@@ -10,6 +10,8 @@ import Link from "next/link";
 import {Button} from "@/component/ui/button";
 import HandwritingImage from '@/image/handWriting.svg';
 import {motion, useInView} from 'framer-motion';
+import DummyQuickLinks from "@/dummyData/quickLinks";
+import QuickLink from "@/component/quickLink";
 
 // Creating and exporting footer component as default
 export default function Footer(): ReactNode {
@@ -45,8 +47,17 @@ export default function Footer(): ReactNode {
                         </div>
                         <div className={'flex items-center flex-wrap justify-start gap-3'}>
                             <h3 className="heading-3">Quick Links</h3>
-                            <Link href={'/'} className={'link-text'}>Home</Link>
-                            <Link href={'/blog'} className={'link-text'}>Blog</Link>
+                            {
+                                DummyQuickLinks.map((item, index) => (
+                                    <QuickLink
+                                        key={index}
+                                        type={item.type}
+                                        title={item.title}
+                                        link={item.link}
+                                        pdfFile={item.pdfFile}
+                                    />
+                                ))
+                            }
                         </div>
                     </div>
                     <div className={'my-5 w-full h-1 dark:bg-white bg-black'}/>
