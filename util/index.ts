@@ -31,3 +31,4 @@ export function calculateAgeText(startDate: Date, endDate: Date): string {
 
     return parts.length > 0 ? parts.join(' & ') : '0 Years & 0 Months';
 };
+

@@ -20,8 +20,10 @@
     "dayjs": "^1.11.13",
     "framer-motion": "^11.5.4",
     "lucide-react": "^0.441.0",
+    "marked": "^14.1.2",
     "next": "14.2.11",
     "next-themes": "^0.3.0",
+    "prismjs": "^1.29.0",
     "react": "^18",
     "react-dom": "^18",
     "react-dom-confetti": "^0.2.0",
@@ -34,6 +36,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/prismjs": "^1.26.4",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",

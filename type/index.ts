@@ -43,21 +43,6 @@ export interface ProjectPageType {
     }
 }
 
-export interface BlogsType {
-    tags: string[];
-    description: string;
-    content: string;
-    title: string;
-    date: string;
-    image?: string;
-}
-
-export interface BlogPageType {
-    params: {
-        blogName: string;
-    }
-}
-
 export interface ThemeToggleType {
     hasText?: boolean;
 }

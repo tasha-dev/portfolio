@@ -5,7 +5,6 @@ import {QuickLinkType} from "@/type";
 // Creating and exporting dummy data of quick links
 const DummyQuickLinks: QuickLinkType[] = [
     {type: 'link', link: '/', title: 'Home'},
-    {type: 'link', link: '/blog', title: 'Blog'},
     {type: 'link', link: '/contact', title: 'Contact'},
     {type: 'pdf-resume', pdfFile: '/resume.pdf', title: 'CV - Resume'},
 ];
