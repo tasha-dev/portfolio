@@ -53,7 +53,7 @@ const DummyProjects: ProjectType[] = [
         useVpn: true
     }, {
         img: MarkioImage.src,
-        link: 'https:/markio.vercel.app/',
+        link: 'https://markio.vercel.app/',
         title: 'Markio',
         portfolioLink: '/project/markio',
         description: 'Created Markio, a streamlined note-taking app designed to securely store and manage ideas and lists. The application ensures that users can easily access their notes from anywhere at any time, offering a user-friendly interface with efficient performance. Key features include secure data storage, seamless synchronization, and an intuitive design, all built using React.js and TailwindCSS. Markio highlights my ability to develop practical, user-centric solutions with a focus on reliability and ease of use.',
