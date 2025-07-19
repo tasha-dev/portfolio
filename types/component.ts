@@ -15,3 +15,7 @@ export interface childrenClassNameOnlyProps {
   className?: string;
   children: ReactNode;
 }
+
+export interface pageProps extends childrenClassNameOnlyProps {
+  variant?: 'sm' | 'lg';
+}
