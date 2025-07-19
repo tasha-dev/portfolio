@@ -6,3 +6,12 @@ import { ReactNode } from 'react';
 export interface childrenOnlyProp {
   children: ReactNode;
 }
+
+export interface classNameOnlyProp {
+  className?: string;
+}
+
+export interface childrenClassNameOnlyProps {
+  className?: string;
+  children: ReactNode;
+}

@@ -142,4 +142,13 @@
   p {
     @apply leading-7 [&:not(:first-child)]:mt-6;
   }
+
+  /* Others */
+  .max-width-layout-1 {
+    @apply max-w-[1200px];
+  }
+
+  .max-width-layout-0 {
+    @apply max-w-[900px];
+  }
 }

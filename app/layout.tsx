@@ -1,12 +1,13 @@
 // Codes by mahdi tasha
 // Importing part
 import { cn } from '@/lib/utils';
-import { childrenOnlyProp } from '@/type/component';
+import { childrenOnlyProp } from '@/types/component';
 import { ReactNode } from 'react';
 import { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
-import '@/style/index.css';
+import '@/styles/index.css';
 import { ThemeProvider } from 'next-themes';
+import Header from '@/components/header';
 
 // Creating and exporting metadata
 export const metadata: Metadata = {
@@ -79,7 +80,10 @@ export default function RootLayout({ children }: childrenOnlyProp): ReactNode {
           sansFont.className,
         )}
       >
-        <ThemeProvider attribute={'class'}>{children}</ThemeProvider>
+        <ThemeProvider attribute={'class'}>
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
