@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+// Codes by mahdi tasha
+// Importing type of next.js config
+import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+// Defining the configs
+const nextConfig: NextConfig = {};
 
+// Exporting the configs as default
 export default nextConfig;
