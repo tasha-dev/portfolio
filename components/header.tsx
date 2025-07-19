@@ -8,6 +8,7 @@ import Logo from './ui/logo';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
+import { motion } from 'framer-motion';
 import {
   Code,
   FileUser,
@@ -69,12 +70,25 @@ export default function Header(): ReactNode {
 
   // Returning JSX
   return (
-    <header className='bg-foreground/30 border border-foreground/40 backdrop-blur-xl lg:py-3 py-2 lg:px-8 px-4 lg:rounded-2xl rounded-lg flex items-center justify-between gap-3 max-width-layout-1 mx-auto lg:top-6 top-3 z-40 sticky w-[calc(100%-24px)]'>
+    <motion.header
+      className='bg-foreground/30 border border-foreground/40 backdrop-blur-xl lg:py-3 py-2 lg:px-8 px-4 lg:rounded-2xl rounded-lg flex items-center justify-between gap-3 max-width-layout-1 mx-auto lg:top-6 top-3 z-40 sticky w-[calc(100%-24px)]'
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.5,
+        ease: 'easeOut',
+        duration: 0.6,
+      }}
+    >
       <Logo className='lg:w-13 lg:h-13 w-10 h-10 text-foreground' />
       <ul className='lg:flex hidden items-center justify-between gap-3'>
         {navLinkContent.map((item, index) => (
           <li key={index}>
-            <Button asChild variant={'link'}>
+            <Button
+              asChild
+              variant={'link'}
+              className='transition-all duration-300 active:scale-95'
+            >
               <Link href={item.href}>{item.label}</Link>
             </Button>
           </li>
@@ -82,16 +96,16 @@ export default function Header(): ReactNode {
       </ul>
       {isMobile ? (
         <Drawer>
-          <DrawerTrigger asChild className='lg:hidden flex'>
+          <DrawerTrigger asChild>
             <Button
               size={'icon'}
-              className='cursor-pointer'
+              className='cursor-pointer transition-all duration-300 active:scale-95'
               variant={'secondary'}
             >
               <Rows4 className='w-2 h-2' />
             </Button>
           </DrawerTrigger>
-          <DrawerContent className='lg:hidden block'>
+          <DrawerContent>
             <DrawerHeader>
               <DrawerTitle>Mahdi Tasha</DrawerTitle>
               <DrawerDescription>
@@ -152,7 +166,7 @@ export default function Header(): ReactNode {
           <DropdownMenuTrigger asChild>
             <Button
               size={'icon'}
-              className='cursor-pointer'
+              className='cursor-pointer transition-all duration-300 active:scale-90'
               variant={'secondary'}
             >
               <Rows4 className='w-2 h-2' />
@@ -178,6 +192,6 @@ export default function Header(): ReactNode {
           </DropdownMenuContent>
         </DropdownMenu>
       )}
-    </header>
+    </motion.header>
   );
 }

@@ -149,6 +149,6 @@
   }
 
   .max-width-layout-0 {
-    @apply max-w-[900px];
+    @apply max-w-[1000px];
   }
 }

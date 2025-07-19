@@ -7,8 +7,8 @@ import { ReactNode } from 'react';
 export default function HomePage(): ReactNode {
   // Returning JSX
   return (
-    <Page>
-      <h1>Hello world</h1>
+    <Page variant='sm'>
+      <div className='h-[500px] bg-primary w-full rounded-3xl'>KJKJKJ</div>
     </Page>
   );
 }

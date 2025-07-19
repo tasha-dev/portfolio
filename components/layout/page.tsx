@@ -17,7 +17,7 @@ export default function Page({
       <Header />
       <div
         className={cn(
-          'mx-auto p-3',
+          'mx-auto p-3 mt-8',
           variant === 'lg' ? 'max-width-layout-1' : 'max-width-layout-0',
           className,
         )}
