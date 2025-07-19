@@ -6,6 +6,7 @@ import { ReactNode } from 'react';
 import { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import '@/style/index.css';
+import { ThemeProvider } from 'next-themes';
 
 // Creating and exporting metadata
 export const metadata: Metadata = {
@@ -75,7 +76,7 @@ export default function RootLayout({ children }: childrenOnlyProp): ReactNode {
           sansFont.className,
         )}
       >
-        {children}
+        <ThemeProvider attribute={'class'}>{children}</ThemeProvider>
       </body>
     </html>
   );
