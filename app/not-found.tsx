@@ -1,12 +1,15 @@
 // Codes by mahdi tasha
-// Forcing next.js to render this component as client side component
-'use client';
-
 // Importing part
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
+import { Metadata } from 'next';
+
+// Defining metadata of this page
+export const metadata: Metadata = {
+  title: 'Not Found',
+};
 
 // Creating and exporting NotFound (404) Page as default
 export default function NotFound(): ReactNode {

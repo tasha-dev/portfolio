@@ -10,7 +10,10 @@ import { ThemeProvider } from 'next-themes';
 
 // Creating and exporting metadata
 export const metadata: Metadata = {
-  title: 'Mahdi Tasha – Front-End Developer',
+  title: {
+    template: 'Mahdi Tasha – %s',
+    default: 'Mahdi Tasha – Front-End Developer',
+  },
   description:
     'Minimal portfolio of Mahdi Tasha – React, Next.js, Tailwind developer from Tehran.',
   creator: 'Mahdi Tasha',
