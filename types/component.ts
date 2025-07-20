@@ -19,3 +19,8 @@ export interface childrenClassNameOnlyProps {
 export interface pageProps extends childrenClassNameOnlyProps {
   variant?: 'sm' | 'lg';
 }
+
+export interface sectionProps extends childrenClassNameOnlyProps {
+  id?: string;
+  delay?: number;
+}

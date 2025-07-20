@@ -3,7 +3,7 @@
 'use client';
 
 // Importing part
-import { ReactNode } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import Logo from './ui/logo';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -62,7 +62,7 @@ const navLinkContent: {
 export default function Header(): ReactNode {
   // Defining hooks of component
   const { theme, setTheme } = useTheme();
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isMobile = useMediaQuery('(max-width: 1024px)');
 
   // Defining a function to toggle theme
   const toggleTheme = () => {
@@ -72,16 +72,17 @@ export default function Header(): ReactNode {
   // Returning JSX
   return (
     <motion.header
-      className='bg-foreground/30 border border-foreground/40 backdrop-blur-xl lg:py-3 py-2 lg:px-8 px-6 rounded-[45rem] flex items-center justify-between lg:gap-3 gap-6 max-width-layout-1 mx-auto lg:top-6 top-auto lg:bottom-auto bottom-5 left-[50%] -translate-x-[50%] z-40 fixed lg:w-full w-max'
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      className='bg-foreground/20 border border-foreground/40 backdrop-blur-xl lg:py-3 py-2 lg:px-8 px-4 rounded-[45rem] flex items-center justify-between lg:gap-3 gap-6 max-width-layout-1 mx-auto lg:top-6 top-auto lg:bottom-auto bottom-5 left-[50%] -translate-x-[50%] z-40 fixed lg:w-full w-max'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{
-        delay: 0.5,
-        ease: 'easeOut',
-        duration: 0.6,
+        type: 'spring',
+        damping: 20,
+        stiffness: 200,
+        duration: 2,
       }}
     >
-      <Logo className='lg:w-13 lg:h-13 w-10 h-10 text-foreground' />
+      <Logo className='lg:w-13 lg:h-13 w-8 h-8 text-foreground' />
       <ul className='lg:flex hidden items-center justify-between gap-3'>
         {navLinkContent.map((item, index) => (
           <li key={index}>

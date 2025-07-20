@@ -1,4 +1,7 @@
 // Codes by mahdi tasha
+// Forcing next.js to render this component as client side component
+'use client';
+
 // Importing part
 import { useEffect, useState } from 'react';
 
