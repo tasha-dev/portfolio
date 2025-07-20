@@ -23,12 +23,13 @@ export default function HomePage(): ReactNode {
         delay={2}
       >
         <HeroAnimation />
-        <div className='w-full mb-8'>
+        <div className='w-full mb-8 lg:block flex flex-col-reverse gap-5'>
           <p>
-            I build clean, performant, <br /> and accessible web interfaces.
+            I build clean, performant, <br className='lg:block hidden' /> and
+            accessible web interfaces.
           </p>
-          <h1 className='mt-3'>
-            Mahdi Tasha <br /> Front‑End Developer
+          <h1 className='lg:mt-3 mt-0'>
+            Mahdi Tasha <br className='lg:block hidden' /> Front‑End Developer
           </h1>
         </div>
       </Section>
@@ -38,7 +39,7 @@ export default function HomePage(): ReactNode {
           <Carousel>
             <CarouselContent>
               {projects.map((item, index) => (
-                <CarouselItem key={index} className='basis-1/3'>
+                <CarouselItem key={index} className='lg:basis-1/3 basis-1/1'>
                   <ProjectCard data={item} />
                 </CarouselItem>
               ))}

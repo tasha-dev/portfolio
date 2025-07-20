@@ -75,7 +75,9 @@ export default function ProjectCard({
               </Tooltip>
             </div>
           </div>
-          <CardDescription>{data.description}</CardDescription>
+          <CardDescription className='line-clamp-3'>
+            {data.description}
+          </CardDescription>
           {data.dates && (
             <p className='text-muted-foreground text-sm mt-3'>
               {format(data.dates.startedAt, 'yyyy-MM-dd')} -{' '}
@@ -86,8 +88,8 @@ export default function ProjectCard({
               {data.dates.endedAt
                 ? differenceInDays(data.dates.startedAt, data.dates.endedAt)
                 : formatDistance(new Date(data.dates.startedAt), new Date(), {
-                  addSuffix: true,
-                })}
+                    addSuffix: true,
+                  })}
               )
             </p>
           )}

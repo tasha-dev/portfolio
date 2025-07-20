@@ -102,7 +102,6 @@ export default function Header(): ReactNode {
             <Button
               size={'icon'}
               className='cursor-pointer transition-all duration-300 active:scale-95'
-              variant={'secondary'}
             >
               <Rows4 className='w-2 h-2' />
             </Button>
@@ -171,7 +170,6 @@ export default function Header(): ReactNode {
             <Button
               size={'icon'}
               className='cursor-pointer transition-all duration-300 active:scale-90'
-              variant={'secondary'}
             >
               <Rows4 className='w-2 h-2' />
             </Button>
