@@ -33,6 +33,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from './ui/drawer';
+import { ScrollArea } from './ui/scroll-area';
 
 // Defining content of links to render
 const navLinkContent: {
@@ -113,47 +114,49 @@ export default function Header(): ReactNode {
                 developer from Tehran.
               </DrawerDescription>
             </DrawerHeader>
-            <div className='flex flex-col gap-3 px-4 w-full pb-3 border-b border-foreground/20 mb-3'>
-              <Button
-                className='flex items-center justify-start w-full'
-                variant={'secondary'}
-                onClick={toggleTheme}
-              >
-                <SunMoon className='w-2 h-2' />
-                Toggle Theme
-              </Button>
-              <Link href='https://github.com/tasha-dev/'>
+            <ScrollArea className='h-[150px]'>
+              <div className='flex flex-col gap-3 px-4 w-full pb-3 border-b border-foreground/20 mb-3'>
                 <Button
                   className='flex items-center justify-start w-full'
                   variant={'secondary'}
+                  onClick={toggleTheme}
                 >
-                  <Code className='w-2 h-2' />
-                  Mahdi Tasha
+                  <SunMoon className='w-2 h-2' />
+                  Toggle Theme
                 </Button>
-              </Link>
-              <Link href='/resume.pdf' download>
-                <Button
-                  className='flex items-center justify-start w-full'
-                  variant={'secondary'}
-                >
-                  <FileUser className='w-2 h-2' />
-                  Download Resume
-                </Button>
-              </Link>
-            </div>
-            <div className='flex flex-col gap-3 px-4 w-full'>
-              {navLinkContent.map((item, index) => (
-                <Link href={item.href} key={index}>
+                <Link href='https://github.com/tasha-dev/'>
                   <Button
                     className='flex items-center justify-start w-full'
                     variant={'secondary'}
                   >
-                    <SquareArrowUpRight className='w-2 h-2' />
-                    {item.label}
+                    <Code className='w-2 h-2' />
+                    Mahdi Tasha
                   </Button>
                 </Link>
-              ))}
-            </div>
+                <Link href='/resume.pdf' download>
+                  <Button
+                    className='flex items-center justify-start w-full'
+                    variant={'secondary'}
+                  >
+                    <FileUser className='w-2 h-2' />
+                    Download Resume
+                  </Button>
+                </Link>
+              </div>
+              <div className='flex flex-col gap-3 px-4 w-full'>
+                {navLinkContent.map((item, index) => (
+                  <Link href={item.href} key={index}>
+                    <Button
+                      className='flex items-center justify-start w-full'
+                      variant={'secondary'}
+                    >
+                      <SquareArrowUpRight className='w-2 h-2' />
+                      {item.label}
+                    </Button>
+                  </Link>
+                ))}
+              </div>
+            </ScrollArea>
             <DrawerFooter>
               <DrawerClose asChild>
                 <Button variant={'destructive'}>Close</Button>
