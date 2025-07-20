@@ -8,8 +8,11 @@ import { ReactNode } from 'react';
 export default function HomePage(): ReactNode {
   // Returning JSX
   return (
-    <Page variant='sm' className='mx-0 max-w-full w-full lg:pt-0 pt-20'>
-      <section className='lg:h-dvh max-width-layout-1 mx-auto lg:flex flex-col items-start justify-end relative'>
+    <Page variant='sm' className='mx-0 max-w-full w-full lg:pt-0 pt-3'>
+      <section
+        className='lg:h-dvh max-width-layout-1 mx-auto lg:flex flex-col items-start justify-end relative lg:mb-6 mb-3'
+        id='hero'
+      >
         <HeroAnimation />
         <div className='w-full mb-8'>
           <p>
@@ -20,6 +23,11 @@ export default function HomePage(): ReactNode {
           </h1>
         </div>
       </section>
+      <div className='mx-auto max-width-layout-1'>
+        <section id='projects'>
+          <h2>Projects</h2>
+        </section>
+      </div>
     </Page>
   );
 }

@@ -72,7 +72,7 @@ export default function Header(): ReactNode {
   // Returning JSX
   return (
     <motion.header
-      className='bg-foreground/30 border border-foreground/40 backdrop-blur-xl lg:py-3 py-2 lg:px-8 px-6 rounded-[45rem] flex items-center justify-between gap-3 max-width-layout-1 mx-auto lg:top-6 top-3 left-[50%] -translate-x-[50%] z-40 fixed w-[calc(100%-24px)]'
+      className='bg-foreground/30 border border-foreground/40 backdrop-blur-xl lg:py-3 py-2 lg:px-8 px-6 rounded-[45rem] flex items-center justify-between lg:gap-3 gap-6 max-width-layout-1 mx-auto lg:top-6 top-auto lg:bottom-auto bottom-5 left-[50%] -translate-x-[50%] z-40 fixed lg:w-full w-max'
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
