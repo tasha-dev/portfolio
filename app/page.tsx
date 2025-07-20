@@ -4,14 +4,13 @@ import HeroAnimation from '@/components/heroAnimation';
 import Page from '@/components/layout/page';
 import { ReactNode } from 'react';
 import Section from '@/components/section';
+import ProjectCard from '@/components/projectCard';
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from '@/components/ui/carousel';
+import projects from '@/data/projects';
 
 // Creating and exporting Home page as default
 export default function HomePage(): ReactNode {
@@ -35,16 +34,16 @@ export default function HomePage(): ReactNode {
       </Section>
       <div className='mx-auto max-width-layout-1'>
         <Section delay={2} id='projects'>
-          <Card>
-            <CardHeader>
-              <div className='w-full h-[200px] bg-foreground' />
-            </CardHeader>
-            <CardContent>
-              <CardTitle>XXKJKJ</CardTitle>
-              <CardDescription>XXKJKJ</CardDescription>
-            </CardContent>
-            <CardFooter>CLICK</CardFooter>
-          </Card>
+          <h2 className='mb-6'>Projects</h2>
+          <Carousel>
+            <CarouselContent>
+              {projects.map((item, index) => (
+                <CarouselItem key={index} className='basis-1/3'>
+                  <ProjectCard data={item} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </Section>
       </div>
     </Page>

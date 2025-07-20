@@ -24,3 +24,19 @@ export interface sectionProps extends childrenClassNameOnlyProps {
   id?: string;
   delay?: number;
 }
+
+export interface projectCardProps {
+  className?: string;
+  data: {
+    img?: string;
+    title: string;
+    description: string;
+    stack: string[];
+    liveUrl: string;
+    status: 'completed' | 'pending';
+    dates?: {
+      startedAt: string;
+      endedAt?: string;
+    };
+  };
+}
