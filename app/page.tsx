@@ -158,6 +158,7 @@ export default function HomePage(): ReactNode {
         </Section>
         <Section
           delay={2}
+          id='contact'
           className='lg:min-h-dvh lg:flex items-center justify-center'
         >
           <div>

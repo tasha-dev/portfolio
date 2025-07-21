@@ -49,8 +49,12 @@ const navLinkContent: {
     label: 'Projects',
   },
   {
-    href: '/#recent-repos',
+    href: '/#skills',
     label: 'Github Repos',
+  },
+  {
+    href: '/#about-me',
+    label: 'About me',
   },
   {
     href: '/#contact',
