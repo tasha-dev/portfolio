@@ -5,8 +5,9 @@ import { childrenOnlyProp } from '@/types/component';
 import { ReactNode } from 'react';
 import { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
-import '@/styles/index.css';
 import { ThemeProvider } from 'next-themes';
+import '@/styles/index.css';
+import '@/styles/skills.css';
 
 // Creating and exporting metadata
 export const metadata: Metadata = {

@@ -5,12 +5,14 @@ import Page from '@/components/layout/page';
 import { ReactNode } from 'react';
 import Section from '@/components/section';
 import ProjectCard from '@/components/projectCard';
+import projects from '@/data/projects';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel';
-import projects from '@/data/projects';
+import SkillCard from '@/components/skillCard';
+import skills from '@/data/skills';
 
 // Creating and exporting Home page as default
 export default function HomePage(): ReactNode {
@@ -33,7 +35,7 @@ export default function HomePage(): ReactNode {
           </h1>
         </div>
       </Section>
-      <div className='mx-auto max-width-layout-1'>
+      <div className='mx-auto max-width-layout-1 flex flex-col lg:gap-8 gap-4'>
         <Section delay={2} id='projects'>
           <h2 className='mb-6'>Projects</h2>
           <Carousel>
@@ -41,6 +43,22 @@ export default function HomePage(): ReactNode {
               {projects.map((item, index) => (
                 <CarouselItem key={index} className='lg:basis-1/3 basis-1/1'>
                   <ProjectCard data={item} />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </Section>
+        <Section delay={3} id='#github-repos'>
+          <h2 className='mb-6'>Skills</h2>
+          <Carousel>
+            <CarouselContent>
+              {skills.map((item, index) => (
+                <CarouselItem key={index} className='lg:basis-1/3 basis-1/1'>
+                  <SkillCard
+                    data={{
+                      title: item,
+                    }}
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>

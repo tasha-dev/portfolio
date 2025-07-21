@@ -2,6 +2,12 @@
 // Importing part
 import { ReactNode } from 'react';
 import Image from 'next/image';
+import { projectCardProps } from '@/types/component';
+import { CircleCheckBig, CircleDashed, Globe } from 'lucide-react';
+import { TooltipContent, Tooltip, TooltipTrigger } from './ui/tooltip';
+import { Button } from './ui/button';
+import Link from 'next/link';
+import { differenceInDays, format, formatDistance } from 'date-fns';
 import {
   Card,
   CardContent,
@@ -10,12 +16,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { projectCardProps } from '@/types/component';
-import { CircleCheckBig, CircleDashed, Globe } from 'lucide-react';
-import { TooltipContent, Tooltip, TooltipTrigger } from './ui/tooltip';
-import { Button } from './ui/button';
-import Link from 'next/link';
-import { differenceInDays, format, formatDistance } from 'date-fns';
 
 // Creating and exporting ProjectCard component as default
 export default function ProjectCard({

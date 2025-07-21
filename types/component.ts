@@ -40,3 +40,28 @@ export interface projectCardProps {
     };
   };
 }
+
+export interface skillsCardProps {
+  className?: string;
+  data: {
+    title:
+      | 'html'
+      | 'css'
+      | 'sass'
+      | 'js'
+      | 'ts'
+      | 'react'
+      | 'next'
+      | 'tailwind'
+      | 'bootsrap'
+      | 'git'
+      | 'vite'
+      | 'jest'
+      | 'zod'
+      | 'rhf'
+      | 'axios'
+      | 'reactquery'
+      | 'framer'
+      | 'shadcn';
+  };
+}

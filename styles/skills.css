@@ -1,0 +1,163 @@
+/* Codes by mahdi tasha */
+/* Creating styles of skills section */
+.skill-html {
+  color: #e34c26;
+  border-color: rgba(227, 76, 38, 0.2);
+}
+
+.skill-html:hover {
+  border-color: rgba(227, 76, 38, 0.5);
+}
+
+.skill-css {
+  color: #264de4;
+  border-color: rgba(38, 77, 228, 0.2);
+}
+
+.skill-css:hover {
+  border-color: rgba(38, 77, 228, 0.5);
+}
+
+.skill-sass {
+  color: #cd6799;
+  border-color: rgba(205, 103, 153, 0.2);
+}
+
+.skill-sass:hover {
+  border-color: rgba(205, 103, 153, 0.5);
+}
+
+.skill-js {
+  color: #f7df1e;
+  border-color: rgba(247, 223, 30, 0.2);
+}
+
+.skill-js:hover {
+  border-color: rgba(247, 223, 30, 0.5);
+}
+
+.skill-ts {
+  color: #3178c6;
+  border-color: rgba(49, 120, 198, 0.2);
+}
+
+.skill-ts:hover {
+  border-color: rgba(49, 120, 198, 0.5);
+}
+
+.skill-react {
+  color: #61dafb;
+  border-color: rgba(97, 218, 251, 0.2);
+}
+
+.skill-react:hover {
+  border-color: rgba(97, 218, 251, 0.5);
+}
+
+.skill-next {
+  color: #000;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.skill-next:hover {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.skill-tailwind {
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.2);
+}
+
+.skill-tailwind:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+.skill-bootstrap {
+  color: #7952b3;
+  border-color: rgba(121, 82, 179, 0.2);
+}
+
+.skill-bootstrap:hover {
+  border-color: rgba(121, 82, 179, 0.5);
+}
+
+.skill-git {
+  color: #f1502f;
+  border-color: rgba(241, 80, 47, 0.2);
+}
+
+.skill-git:hover {
+  border-color: rgba(241, 80, 47, 0.5);
+}
+
+.skill-vite {
+  color: #646cff;
+  border-color: rgba(100, 108, 255, 0.2);
+}
+
+.skill-vite:hover {
+  border-color: rgba(100, 108, 255, 0.5);
+}
+
+.skill-jest {
+  color: #c63d14;
+  border-color: rgba(198, 61, 20, 0.2);
+}
+
+.skill-jest:hover {
+  border-color: rgba(198, 61, 20, 0.5);
+}
+
+.skill-zod {
+  color: #7c3aed;
+  border-color: rgba(124, 58, 237, 0.2);
+}
+
+.skill-zod:hover {
+  border-color: rgba(124, 58, 237, 0.5);
+}
+
+.skill-rhf {
+  color: #ec4899;
+  border-color: rgba(236, 72, 153, 0.2);
+}
+
+.skill-rhf:hover {
+  border-color: rgba(236, 72, 153, 0.5);
+}
+
+.skill-axios {
+  color: #5a91ff;
+  border-color: rgba(90, 145, 255, 0.2);
+}
+
+.skill-axios:hover {
+  border-color: rgba(90, 145, 255, 0.5);
+}
+
+.skill-reactquery {
+  color: #ff4154;
+  border-color: rgba(255, 65, 84, 0.2);
+}
+
+.skill-reactquery:hover {
+  border-color: rgba(255, 65, 84, 0.5);
+}
+
+.skill-framer {
+  color: #ab68ff;
+  border-color: rgba(171, 104, 255, 0.2);
+}
+
+.skill-framer:hover {
+  border-color: rgba(171, 104, 255, 0.5);
+}
+
+.skill-shadcn {
+  color: #3f3f46;
+  border-color: rgba(63, 63, 70, 0.2);
+}
+
+.skill-shadcn:hover {
+  border-color: rgba(63, 63, 70, 0.5);
+}
