@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { pageProps } from '@/types/component';
 import { ReactNode } from 'react';
 import Header from '../header';
+import Footer from '../footer';
 
 // Creating and exporting Page component as default
 export default function Page({
@@ -24,6 +25,7 @@ export default function Page({
       >
         {children}
       </div>
+      <Footer />
     </>
   );
 }
