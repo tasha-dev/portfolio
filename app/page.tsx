@@ -15,8 +15,22 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import { Badge } from '@/components/ui/badge';
-import { Code, Github, Globe, Instagram, Mail, Send } from 'lucide-react';
+import {
+  Code,
+  Github,
+  Globe,
+  HeartHandshake,
+  Instagram,
+  Mail,
+  Send,
+} from 'lucide-react';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 // Creating and exporting Home page as default
 export default function HomePage(): ReactNode {
@@ -39,25 +53,31 @@ export default function HomePage(): ReactNode {
           </h1>
         </div>
       </Section>
-      <div className='mx-auto max-width-layout-1 flex flex-col lg:gap-8 gap-4'>
+      <div className='mx-auto max-width-layout-1 flex flex-col lg:gap-8 gap-10'>
         <Section delay={2} id='projects'>
           <h2 className='mb-6'>Projects</h2>
           <Carousel>
             <CarouselContent>
               {projects.map((item, index) => (
-                <CarouselItem key={index} className='lg:basis-1/3 basis-1/1'>
+                <CarouselItem
+                  key={index}
+                  className='lg:basis-1/3 md:basis-1/2 basis-1/1'
+                >
                   <ProjectCard data={item} />
                 </CarouselItem>
               ))}
             </CarouselContent>
           </Carousel>
         </Section>
-        <Section delay={3} id='skills'>
+        <Section delay={2} id='skills'>
           <h2 className='mb-6'>Skills</h2>
           <Carousel>
             <CarouselContent>
               {skills.map((item, index) => (
-                <CarouselItem key={index} className='lg:basis-1/3 basis-1/1'>
+                <CarouselItem
+                  key={index}
+                  className='lg:basis-1/3 md:basis-1/2 basis-1/1'
+                >
                   <SkillCard
                     data={{
                       title: item,
@@ -132,6 +152,58 @@ export default function HomePage(): ReactNode {
                     Email
                   </Link>
                 </Badge>
+              </div>
+            </div>
+          </div>
+        </Section>
+        <Section
+          delay={2}
+          className='lg:min-h-dvh lg:flex items-center justify-center'
+        >
+          <div>
+            <h3 className='lg:text-center scroll-m-20 lg:font-extrabold font-semibold tracking-tight lg:text-5xl text-2xl mb-2'>
+              Let’s Work Together
+            </h3>
+            <p className='mb-4 lg:text-center lg:text-xl text-base font-medium'>
+              Interested in collaborating or just want to say hi? <br />
+              Book a meeting via google calender
+            </p>
+            <div className='flex lg:flex-row flex-col items-center justify-center mx-auto lg:gap-3 gap-1'>
+              <Button
+                asChild
+                className='lg:w-auto w-full flex items-center justify-start gap-2'
+              >
+                <Link
+                  href='https://calendar.app.google/AYYiNGdH4MDMXcD66'
+                  target='_blank'
+                >
+                  <HeartHandshake className='w-2 h-2 shrink-0' />
+                  <span className='flex-1 text-left'>Book a meeting</span>
+                </Link>
+              </Button>
+              <span className='text-base font-normal text-muted-foreground block text-center my-2'>
+                Or
+              </span>
+              <div className='flex items-center justify-start lg:gap-1 gap-3 w-full'>
+                <Button
+                  asChild
+                  className='lg:w-auto w-full flex items-center justify-start gap-2 lg:flex-auto flex-1'
+                >
+                  <Link href='mailto:imwhdiiii@gmail.com' target='_blank'>
+                    <Mail className='w-2 h-2 shrink-0' />
+                    <span className='flex-1 text-left'>Send Email</span>
+                  </Link>
+                </Button>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <Button asChild size='icon'>
+                      <Link href='https://t.me/tashaDEV' target='_blank'>
+                        <Send className='w-2 h-2 shrink-0' />
+                      </Link>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>Send message in telegram</TooltipContent>
+                </Tooltip>
               </div>
             </div>
           </div>
