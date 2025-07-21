@@ -6,13 +6,17 @@ import { ReactNode } from 'react';
 import Section from '@/components/section';
 import ProjectCard from '@/components/projectCard';
 import projects from '@/data/projects';
+import Image from 'next/image';
+import SkillCard from '@/components/skillCard';
+import skills from '@/data/skills';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel';
-import SkillCard from '@/components/skillCard';
-import skills from '@/data/skills';
+import { Badge } from '@/components/ui/badge';
+import { Code, Github, Globe, Instagram, Mail, Send } from 'lucide-react';
+import Link from 'next/link';
 
 // Creating and exporting Home page as default
 export default function HomePage(): ReactNode {
@@ -48,7 +52,7 @@ export default function HomePage(): ReactNode {
             </CarouselContent>
           </Carousel>
         </Section>
-        <Section delay={3} id='#github-repos'>
+        <Section delay={3} id='skills'>
           <h2 className='mb-6'>Skills</h2>
           <Carousel>
             <CarouselContent>
@@ -63,6 +67,74 @@ export default function HomePage(): ReactNode {
               ))}
             </CarouselContent>
           </Carousel>
+        </Section>
+        <Section
+          delay={2}
+          id='about-me'
+          className='lg:grid lg:grid-cols-3 flex flex-col lg:gap-4 gap-2'
+        >
+          <h2 className='lg:hidden block'>Who I Am</h2>
+          <Image
+            alt='Mahdi Tasha'
+            width={1200}
+            height={900}
+            src='/ImageOfMahdi.jpg'
+            className='object-cover lg:h-[500px] h-[300px] w-full lg:rounded-2xl rounded-xl'
+          />
+          <div className='lg:col-span-2 flex flex-col items-start justify-between'>
+            <div className='w-full'>
+              <h2 className='lg:block hidden'>Who I Am</h2>
+              <p>
+                Hi, <br /> I’m Mahdi—a {new Date().getFullYear() - 2006}
+                ‑year‑old front‑end developer based in Iran, Tehran. <br />
+                I’ve been building with HTML, CSS, JavaScript and TypeScript
+                since 2020, and love crafting interfaces that are simple, fast,
+                and accessible. <br /> When I’m not coding, you’ll find me
+                lifting at the gym, sketching new UI ideas, or gaming with
+                friends. I’m passionate about collaborating on international
+                projects and continuously learning new frameworks and best
+                practices.
+              </p>
+            </div>
+            <div>
+              <h4 className='mb-2'>Socials</h4>
+              <div className='flex items-center flex-wrap gap-2'>
+                <Badge className='rounded-[50rem]' asChild>
+                  <Link href='https://github.com/tasha-dev' target='_blank'>
+                    <Github />
+                    Github
+                  </Link>
+                </Badge>
+                <Badge className='rounded-[50rem]' asChild>
+                  <Link href='https://dev.to/tashadev_59' target='_blank'>
+                    <Code />
+                    Dev.to
+                  </Link>
+                </Badge>
+                <Badge className='rounded-[50rem]' asChild>
+                  <Link
+                    href='https://www.instagram.com/1tashadev/'
+                    target='_blank'
+                  >
+                    <Instagram />
+                    Instagram
+                  </Link>
+                </Badge>
+                <Badge className='rounded-[50rem]' asChild>
+                  <Link href='https://t.me/tashaDEV' target='_blank'>
+                    <Send />
+                    Telegram
+                  </Link>
+                </Badge>
+                <Badge className='rounded-[50rem]' asChild>
+                  <Link href='mailto:imwhdiiii@gmail.com' target='_blank'>
+                    <Mail />
+                    Email
+                  </Link>
+                </Badge>
+              </div>
+            </div>
+          </div>
         </Section>
       </div>
     </Page>
