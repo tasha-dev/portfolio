@@ -16,12 +16,17 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 // Creating and exporting ProjectCard component as default
 export default function ProjectCard({
   data,
   className,
 }: projectCardProps): ReactNode {
+  // Defining variables
+  const startedAt = new Date(data.dates?.startedAt || '');
+  const endedAt = new Date(data.dates?.endedAt || '');
+
   // Returning JSX
   return (
     <Link
@@ -29,77 +34,77 @@ export default function ProjectCard({
       target='_blank'
       className='cursor-pointer transition-all duration-500 active:scale-95'
     >
-      <Card className={className}>
-        <CardHeader>
-          {data.img ? (
-            <Image
-              alt={data.title}
-              width={1200}
-              height={900}
-              src={data.img}
-              className='w-full rounded-lg object-cover h-[200px]'
-            />
-          ) : (
-            <div className='w-full h-[200px] bg-foreground rounded-lg' />
-          )}
-        </CardHeader>
-        <CardContent>
-          <div className='flex items-center justify-between gap-3 mb-2'>
-            <CardTitle className='flex-1 truncate'>{data.title}</CardTitle>
-            <div className='shrink-0 flex items-center justify-between gap-2'>
-              {data.status === 'completed' ? (
+      <Card
+        className={cn(
+          'min-h-[600px] flex flex-col items-start justify-between gap-10',
+          className,
+        )}
+      >
+        <div>
+          <CardHeader className='w-full'>
+            {data.img ? (
+              <Image
+                alt={data.title}
+                width={1200}
+                height={900}
+                src={data.img}
+                className='w-full rounded-lg object-cover h-[200px]'
+              />
+            ) : (
+              <div className='w-full h-[200px] bg-foreground rounded-lg' />
+            )}
+          </CardHeader>
+          <CardContent className='w-full'>
+            <div className='flex items-center justify-between gap-3 mb-2 mt-2'>
+              <CardTitle className='flex-1 truncate'>{data.title}</CardTitle>
+              <div className='shrink-0 flex items-center justify-between gap-2'>
+                {data.status === 'completed' ? (
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <CircleCheckBig className='w-5 h-5 text-foreground cursor-pointer' />
+                    </TooltipTrigger>
+                    <TooltipContent>This project is completed !</TooltipContent>
+                  </Tooltip>
+                ) : (
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <CircleDashed className='w-5 h-5 text-foreground cursor-pointer' />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      This project is under developed !
+                    </TooltipContent>
+                  </Tooltip>
+                )}
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <CircleCheckBig className='w-5 h-5 text-foreground cursor-pointer' />
-                  </TooltipTrigger>
-                  <TooltipContent>This project is completed !</TooltipContent>
-                </Tooltip>
-              ) : (
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <CircleDashed className='w-5 h-5 text-foreground cursor-pointer' />
+                    <Globe className='w-5 h-5 text-foreground cursor-pointer' />
                   </TooltipTrigger>
                   <TooltipContent>
-                    This project is under developed !
+                    This project is live , And you can see it live by clicking
+                    on !
                   </TooltipContent>
                 </Tooltip>
-              )}
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Globe className='w-5 h-5 text-foreground cursor-pointer' />
-                </TooltipTrigger>
-                <TooltipContent>
-                  This project is live , And you can see it live by clicking on
-                  !
-                </TooltipContent>
-              </Tooltip>
+              </div>
             </div>
-          </div>
-          <CardDescription className='line-clamp-3'>
-            {data.description}
-          </CardDescription>
-          {data.dates && (
-            <p className='text-muted-foreground text-sm mt-3'>
-              {format(data.dates.startedAt, 'yyyy-MM-dd')} -{' '}
-              {data.dates.endedAt
-                ? format(data.dates.endedAt, 'yyyy-MM-dd')
-                : 'N/A'}
-              (
-              {data.dates.endedAt
-                ? differenceInDays(data.dates.startedAt, data.dates.endedAt)
-                : formatDistance(new Date(data.dates.startedAt), new Date(), {
-                    addSuffix: true,
-                  })}
-              )
-            </p>
-          )}
-          <ul className='list-disc list-inside mt-3'>
-            {data.stack.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        </CardContent>
-        <CardFooter>
+            <CardDescription className='line-clamp-3 w-full'>
+              {data.description}
+            </CardDescription>
+            {data.dates && (
+              <p className='text-muted-foreground text-sm mt-3 w-full'>
+                {format(new Date(data.dates.startedAt), 'yyyy-MM-dd')} -{' '}
+                {data.dates.endedAt
+                  ? format(new Date(data.dates.endedAt), 'yyyy-MM-dd')
+                  : 'N/A'}
+              </p>
+            )}
+            <ul className='list-disc list-inside mt-3 w-full'>
+              {data.stack.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </CardContent>
+        </div>
+        <CardFooter className='w-full'>
           {data.liveUrl && (
             <Button className='flex items-center justify-start gap-2 w-full cursor-pointer'>
               <Globe className='w-2 h-2 shrink-0' />
