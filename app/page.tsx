@@ -41,24 +41,9 @@ export default function HomePage(): ReactNode {
           </div>
         </main>
       </section>
-      <section className="mb-14" id="skills">
+      <section className="mb-14" id="contact">
         <main>
-          <h2 className="mb-5">Skills</h2>
-          <div className="grid grid-cols-4 gap-4">
-            {Skills.map((item, index) => (
-              <div
-                key={index}
-                className={cn(
-                  "flex items-center justify-center px-3 py-6 rounded-lg bg-foreground text-background",
-                  (index === 16 || index === 17) && "col-span-2",
-                )}
-              >
-                <span className="block text-center text-sm font-semibold truncate">
-                  {item}
-                </span>
-              </div>
-            ))}
-          </div>
+          <h2 className="mb-5">Contact Me</h2>
         </main>
       </section>
     </Page>
