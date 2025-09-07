@@ -7,3 +7,12 @@ import { twMerge } from "tailwind-merge";
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
+
+// Creating and exporting a function to return first letter of each word
+export function getInitials(value: string) {
+  return value
+    .split(" ")
+    .map((name) => name[0])
+    .join("")
+    .toUpperCase();
+}

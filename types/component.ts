@@ -11,3 +11,18 @@ export interface PageProps {
   children: ReactNode;
   className?: string;
 }
+
+export interface PersonComponentProps {
+  className?: string;
+  data: {
+    name: string;
+    image?: string;
+    description: string;
+    role: string;
+    links: {
+      ig?: string; // Instagram
+      tg?: string; // Telegram
+      gh?: string; // Github
+    };
+  };
+}
