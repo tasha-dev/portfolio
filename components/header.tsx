@@ -49,7 +49,7 @@ export default function Header(): ReactNode {
               variant={"link"}
               className="!ring-0 !outline-none focus:underline p-0"
             >
-              <Link href={item.href}>{item.label}</Link>
+              <Link href={`/${item.href}`}>{item.label}</Link>
             </Button>
           </li>
         ))}

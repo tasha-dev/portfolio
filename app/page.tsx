@@ -5,9 +5,7 @@ import Person from "@/components/person";
 import { differenceInYears } from "date-fns";
 import { ReactNode } from "react";
 import projects from "@/data/projects";
-import Skills from "@/data/skills";
 import Project from "@/components/project";
-import { cn } from "@/lib/utils";
 
 // Creating and exporting Home page as default
 export default function HomePage(): ReactNode {
