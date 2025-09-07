@@ -1,6 +1,7 @@
 // Codes by mahdi tasha
 // Importing part
 import { ReactNode } from "react";
+import { ProjectType } from "./general";
 
 // Creating and exporting Type of props of components
 export interface RootLayoutProps {
@@ -25,4 +26,9 @@ export interface PersonComponentProps {
       gh?: string; // Github
     };
   };
+}
+
+export interface ProjectComponentProps {
+  data: ProjectType;
+  className?: string;
 }
