@@ -12,7 +12,7 @@ import {
   Tooltip,
   TooltipTrigger,
   TooltipContent,
-} from "@/component/ui/tooltip";
+} from "@/components/ui/tooltip";
 
 // Defining links of header
 const links: {
