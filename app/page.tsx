@@ -5,7 +5,9 @@ import Person from "@/components/person";
 import { differenceInYears } from "date-fns";
 import { ReactNode } from "react";
 import projects from "@/data/projects";
+import Skills from "@/data/skills";
 import Project from "@/components/project";
+import { cn } from "@/lib/utils";
 
 // Creating and exporting Home page as default
 export default function HomePage(): ReactNode {
@@ -29,12 +31,32 @@ export default function HomePage(): ReactNode {
           />
         </main>
       </section>
-      <section className="mb-14 border-b pb-7" id="projects">
+      <section className="mb-14" id="projects">
         <main>
           <h2 className="mb-5">Projects</h2>
           <div className="flex flex-col gap-12">
             {projects.map((item, index) => (
               <Project data={item} key={index} />
+            ))}
+          </div>
+        </main>
+      </section>
+      <section className="mb-14" id="skills">
+        <main>
+          <h2 className="mb-5">Skills</h2>
+          <div className="grid grid-cols-4 gap-4">
+            {Skills.map((item, index) => (
+              <div
+                key={index}
+                className={cn(
+                  "flex items-center justify-center px-3 py-6 rounded-lg bg-foreground text-background",
+                  (index === 16 || index === 17) && "col-span-2",
+                )}
+              >
+                <span className="block text-center text-sm font-semibold truncate">
+                  {item}
+                </span>
+              </div>
             ))}
           </div>
         </main>
