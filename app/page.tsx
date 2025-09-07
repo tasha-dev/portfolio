@@ -1,6 +1,6 @@
 // Codes by mahdi tasha
 // Importing part
-import Page from "@/component/layout/page";
+import Page from "@/components/layout/page";
 import { ReactNode } from "react";
 
 // Creating and exporting Home page as default

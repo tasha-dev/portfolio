@@ -2,11 +2,11 @@
 // Importing part
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import "@/style/index.css";
 import { ThemeProvider } from "next-themes";
 import { JetBrains_Mono } from "next/font/google";
-import { RootLayoutProps } from "@/type/component";
+import { RootLayoutProps } from "@/types/component";
 import { cn } from "@/lib/utils";
+import "@/style/index.css";
 
 // Creating and exporting metadata
 export const metadata: Metadata = {
@@ -75,7 +75,7 @@ export default function RootLayout({ children }: RootLayoutProps): ReactNode {
     <html suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen overflow-x-hidden overflow-y-auto bg-background text-foreground",
+          "min-h-screen overflow-x-hidden overflow-y-auto bg-background text-foreground scroll-smooth",
           font.className,
         )}
       >

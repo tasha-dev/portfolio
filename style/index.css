@@ -142,8 +142,4 @@
   p {
     @apply leading-7 [&:not(:first-child)]:mt-6;
   }
-
-  .max-width-layout {
-    @apply max-w-[500px];
-  }
 }
