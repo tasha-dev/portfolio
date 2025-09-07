@@ -48,7 +48,11 @@ export default function Header(): ReactNode {
       <ul className="flex items-center justify-center gap-6">
         {links.map((item, index) => (
           <li key={index}>
-            <Button asChild variant={"link"} className="p-0">
+            <Button
+              asChild
+              variant={"link"}
+              className="!ring-0 !outline-none focus:underline p-0"
+            >
               <Link href={item.href}>{item.label}</Link>
             </Button>
           </li>
