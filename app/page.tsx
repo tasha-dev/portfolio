@@ -6,6 +6,9 @@ import { differenceInYears } from "date-fns";
 import { ReactNode } from "react";
 import projects from "@/data/projects";
 import Project from "@/components/project";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Mail, Send } from "lucide-react";
 
 // Creating and exporting Home page as default
 export default function HomePage(): ReactNode {
@@ -42,6 +45,32 @@ export default function HomePage(): ReactNode {
       <section className="mb-14" id="contact">
         <main>
           <h2 className="mb-5">Contact Me</h2>
+          <p className="mt-0">
+            Whether you’ve got a project in mind, a question about my work, or
+            just want to say hi—I’d love to hear from you. Feel free to drop me
+            an email or send a quick message on Telegram. I’m always open to new
+            ideas, collaborations, or a good conversation. Your message won’t
+            get lost in the void—I actually read them!
+          </p>
+          <div className="flex items-center justify-center gap-3 mt-10">
+            <Button asChild>
+              <Link
+                href="https://t.me/tashaDEV"
+                className="flex"
+                target="_blank"
+              >
+                <Send />
+                Telegram
+              </Link>
+            </Button>
+            <span>OR</span>
+            <Button asChild>
+              <Link href="mailto:imwhdiiii@gmail.com" className="flex">
+                <Mail />
+                E-Mail
+              </Link>
+            </Button>
+          </div>
         </main>
       </section>
     </Page>
