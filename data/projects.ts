@@ -25,7 +25,6 @@ const projects: ProjectType[] = [
       startedAt: "2023-06-25",
       endedAt: "2023-08-26",
     },
-    liveUrl: "#",
   },
   {
     title: "Chand ?!",

@@ -3,7 +3,7 @@
 export interface ProjectType {
   title: string;
   description: string;
-  liveUrl: string;
+  liveUrl?: string;
   stack: string[];
   status: "pending" | "completed";
   dates: {

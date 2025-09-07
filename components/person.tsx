@@ -37,6 +37,7 @@ export default function Person({
                 <Badge asChild>
                   <Link
                     href={links.gh}
+                    target="_blank"
                     className="flex items-center justify-start w-fit gap-2 text-xs"
                   >
                     <Github />
@@ -50,6 +51,7 @@ export default function Person({
                 <Badge asChild>
                   <Link
                     href={links.tg}
+                    target="_blank"
                     className="flex items-center justify-start w-fit gap-2 text-xs"
                   >
                     <Send />
@@ -63,6 +65,7 @@ export default function Person({
                 <Badge asChild>
                   <Link
                     href={links.ig}
+                    target="_blank"
                     className="flex items-center justify-start w-fit gap-2 text-xs"
                   >
                     <Instagram />

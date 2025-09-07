@@ -22,16 +22,18 @@ export default function Project({
       <div className="flex items-center justify-between gap-3 mb-2">
         <h3 className="text-lg flex-1 font-bold truncate block">{title}</h3>
         <div className="shrink-0 flex items-center justify-between">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button asChild variant={"ghost"} size="icon">
-                <Link href={liveUrl}>
-                  <Globe />
-                </Link>
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>Click to see live version</TooltipContent>
-          </Tooltip>
+          {liveUrl && (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button asChild variant={"ghost"} size="icon">
+                  <Link target="_blank" href={liveUrl}>
+                    <Globe />
+                  </Link>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>Click to see live version</TooltipContent>
+            </Tooltip>
+          )}
           <Tooltip>
             <TooltipTrigger>
               <Button variant={"ghost"} size="icon" className="cursor-pointer">
