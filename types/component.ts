@@ -20,6 +20,7 @@ export interface PersonComponentProps {
     image?: string;
     description: string;
     role: string;
+    resume?: string;
     links: {
       ig?: string; // Instagram
       tg?: string; // Telegram

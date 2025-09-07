@@ -7,11 +7,11 @@ import { AvatarFallback } from "@radix-ui/react-avatar";
 import { getInitials } from "@/lib/utils";
 import Link from "next/link";
 import { Badge } from "./ui/badge";
-import { Github, Instagram, Send } from "lucide-react";
+import { Code, Github, Instagram, Send } from "lucide-react";
 
 // Creating and exporting Person component
 export default function Person({
-  data: { description, name, role, image, links },
+  data: { description, name, role, image, links, resume },
   className,
 }: PersonComponentProps): ReactNode {
   // Returning JSX
@@ -70,6 +70,20 @@ export default function Person({
                   >
                     <Instagram />
                     Instagram
+                  </Link>
+                </Badge>
+              </li>
+            )}
+            {resume && (
+              <li>
+                <Badge asChild>
+                  <Link
+                    href={resume}
+                    download
+                    className="flex items-center justify-start w-fit gap-2 text-xs"
+                  >
+                    <Code />
+                    Resume
                   </Link>
                 </Badge>
               </li>

@@ -23,6 +23,7 @@ export default function HomePage(): ReactNode {
               image: "https://github.com/tasha-dev.png",
               description: `I am a mid-level front-end developer with ${differenceInYears(new Date(), "2020-04-04")} years of experience building modern, responsive web applications. I enjoy teamwork, problem-solving, and creating interactive UIs using React, Next.js, and TypeScript.`,
               role: "Front-End Developer",
+              resume: "resume.pdf",
               links: {
                 ig: "https://instagram.com/1tashadev",
                 tg: "https://t.me/tashaDEV",
