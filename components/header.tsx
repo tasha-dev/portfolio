@@ -8,11 +8,13 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { SunMoon } from "lucide-react";
 import { useTheme } from "next-themes";
+import Logo from "@/public/Vector.png";
 import {
   Tooltip,
   TooltipTrigger,
   TooltipContent,
 } from "@/components/ui/tooltip";
+import Image from "next/image";
 
 // Defining links of header
 const links: {
@@ -41,7 +43,16 @@ export default function Header(): ReactNode {
   // Returning JSX
   return (
     <header className="flex items-center justify-between gap-5 mb-10">
-      <ul className="flex items-center justify-center gap-6">
+      <Link href="/" className="md:hidden block">
+        <Image
+          alt="Mahdi Tasha Logo"
+          src={Logo.src}
+          width={100}
+          height={100}
+          className="w-10 object-cover invert"
+        />
+      </Link>
+      <ul className="md:flex hidden items-center justify-center gap-6">
         {links.map((item, index) => (
           <li key={index}>
             <Button

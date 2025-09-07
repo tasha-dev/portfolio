@@ -52,7 +52,7 @@ export default function HomePage(): ReactNode {
             ideas, collaborations, or a good conversation. Your message won’t
             get lost in the void—I actually read them!
           </p>
-          <div className="flex items-center justify-center gap-3 mt-10">
+          <div className="flex md:flex-row flex-col items-center justify-center gap-3 mt-10">
             <Button asChild>
               <Link
                 href="https://t.me/tashaDEV"

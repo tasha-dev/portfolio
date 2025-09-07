@@ -17,7 +17,7 @@ export default function Person({
   // Returning JSX
   return (
     <div className={className}>
-      <div className="flex items-center justify-start gap-5 mb-2">
+      <div className="flex md:flex-row flex-col items-center justify-start gap-5 mb-2">
         <Avatar className="shrink-0 size-20 aspect-square bg-foreground flex items-center justify-center">
           <AvatarFallback className="text-background">
             {getInitials(name)}
@@ -25,13 +25,13 @@ export default function Person({
           {image && <AvatarImage src={image} alt={name} />}
         </Avatar>
         <div className="flex-1">
-          <h1 className="text-lg p-0 font-bold border-none truncate block">
+          <h1 className="text-lg p-0 font-bold border-none truncate block md:text-left text-center">
             {name}
           </h1>
-          <h2 className="text-base border-none p-0 font-normal truncate block mb-3">
+          <h2 className="text-base border-none p-0 font-normal truncate block mb-3 md:text-left text-center">
             {role}
           </h2>
-          <ul className="flex items-center justify-start gap-2 flex-wrap">
+          <ul className="flex items-center md:justify-start justify-center gap-2 flex-wrap">
             {links.gh && (
               <li>
                 <Badge asChild>
@@ -77,7 +77,7 @@ export default function Person({
           </ul>
         </div>
       </div>
-      <p>{description}</p>
+      <p className="md:text-left text-center">{description}</p>
     </div>
   );
 }
