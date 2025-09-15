@@ -122,6 +122,11 @@
     @apply bg-background text-foreground;
   }
 
+  /* Custom style */
+  .scrollbar-hide::-webkit-scrollbar {
+    @apply hidden;
+  }
+
   /* Typo graphy */
   h1 {
     @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
@@ -143,13 +148,72 @@
     @apply leading-7 [&:not(:first-child)]:mt-6;
   }
 
-  .scrollbar-hide::-webkit-scrollbar {
-    @apply hidden;
-  }
-
   .markdown {
+    @apply flex flex-col gap-3;
+
+    h1 {
+      @apply scroll-m-20 text-left text-4xl font-extrabold tracking-tight text-balance m-0 mb-4;
+    }
+
+    h2 {
+      @apply scroll-m-20 text-3xl font-semibold tracking-tight border-none m-0 mb-3;
+    }
+
     h3 {
-      /* background: red; */
+      @apply scroll-m-20 text-2xl font-semibold tracking-tight m-0 mb-3;
+    }
+
+    h4 {
+      @apply scroll-m-20 text-xl font-semibold tracking-tight m-0 mb-2;
+    }
+
+    p {
+      @apply leading-7 m-0 not-last:mb-4 border-none;
+    }
+
+    blockquote {
+      @apply border-l-2 pl-6 italic mb-5;
+    }
+
+    hr {
+      @apply border-foreground/20 mb-6;
+    }
+
+    table {
+      @apply w-full mb-5;
+
+      tr {
+        @apply even:bg-muted m-0 border-t p-0;
+      }
+
+      th {
+        @apply border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right;
+      }
+
+      td {
+        @apply border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right;
+      }
+    }
+
+    ul,
+    ol {
+      @apply ml-6 space-y-3 mb-4;
+    }
+
+    li > :is(ul, ol) {
+      @apply mt-3;
+    }
+
+    ul {
+      @apply list-disc;
+    }
+
+    ol {
+      @apply list-decimal;
+    }
+
+    code {
+      @apply bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
     }
   }
 }

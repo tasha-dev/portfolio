@@ -7,6 +7,9 @@ import { MarkdownProps } from "@/types/component";
 import { Loader2 } from "lucide-react";
 import { ReactNode, useEffect, useState } from "react";
 import { Md } from "@m2d/react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/atom-one-dark.css";
 
 // Creating and exporting Markdown component as default
 export default function Markdown({ contentPath }: MarkdownProps): ReactNode {
@@ -30,6 +33,14 @@ export default function Markdown({ contentPath }: MarkdownProps): ReactNode {
       </div>
     );
   } else {
-    return <Md className="markdown">{content}</Md>;
+    return (
+      <Md
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeHighlight]}
+        className="markdown"
+      >
+        {content}
+      </Md>
+    );
   }
 }

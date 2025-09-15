@@ -66,6 +66,7 @@ const font = JetBrains_Mono({
   style: ["normal"],
   subsets: ["latin"],
   weight: ["300", "500", "600", "700", "400"],
+  variable: "--font-mono",
 });
 
 // Creating and exporting root layout component as default

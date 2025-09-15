@@ -1,8 +1,7 @@
 // Codes by mahdi tasha
 // Importing part
 import Page from "@/components/layout/page";
-import Person from "@/components/person";
-import { differenceInYears, format } from "date-fns";
+import { format } from "date-fns";
 import { ReactNode } from "react";
 import blogs from "@/data/blogs";
 import { BlogPageProps } from "@/types/component";
@@ -23,32 +22,34 @@ export default function BlogContentPage(props: BlogPageProps): ReactNode {
   if (findedBlogObj) {
     return (
       <Page>
-        <section className="mb-14">
-          <main>
-            <span className="text-muted-foreground text-xs block truncate mb-2">
-              {format(findedBlogObj.createdAt, "dd/MM/yyyy")}
-            </span>
-            <h1 className="text-xl">{findedBlogObj.title}</h1>
-            <p>{findedBlogObj.description}</p>
-          </main>
-        </section>
-        <section className="mb-14">
-          <main>
-            <Markdown contentPath={findedBlogObj.content} />
-          </main>
-        </section>
-        <section>
-          <ul className="flex items-center justify-start gap-2 flex-wrap">
-            {findedBlogObj.keywords.map((item, index) => (
-              <li key={index}>
-                <Badge className="flex items-center justify-start w-fit gap-2 text-xs">
-                  <Tags className="shrink-0" />
-                  <span className="flex-1 text-left truncate">{item}</span>
-                </Badge>
-              </li>
-            ))}
-          </ul>
-        </section>
+        <article>
+          <section className="mb-10 border-b border-foreground/20 pb-7">
+            <main>
+              <span className="text-muted-foreground text-xs block truncate mb-2">
+                {format(findedBlogObj.createdAt, "dd/MM/yyyy")}
+              </span>
+              <h1 className="text-xl mb-3">{findedBlogObj.title}</h1>
+              <p>{findedBlogObj.description}</p>
+            </main>
+          </section>
+          <section className="mb-14">
+            <main>
+              <Markdown contentPath={findedBlogObj.content} />
+            </main>
+          </section>
+          <section>
+            <ul className="flex items-center justify-start gap-2 flex-wrap">
+              {findedBlogObj.keywords.map((item, index) => (
+                <li key={index}>
+                  <Badge className="flex items-center justify-start w-fit gap-2 text-xs">
+                    <Tags className="shrink-0" />
+                    <span className="flex-1 text-left truncate">{item}</span>
+                  </Badge>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </article>
       </Page>
     );
   } else {

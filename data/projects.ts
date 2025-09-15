@@ -108,17 +108,6 @@ const projects: ProjectType[] = [
       endedAt: "2024-02-29",
     },
   },
-  {
-    title: "I will be good",
-    description: "Track and reminde your medic(t)ations - Web version",
-    liveUrl: "https://iwillbegood.vercel.app/",
-    stack: ["TypeScript", "NextJS", "ReactJS", "TailwindCSS"],
-    status: "completed",
-    dates: {
-      startedAt: "2024-02-20",
-      endedAt: "2024-02-25",
-    },
-  },
 ];
 
 // Exporting the data as default

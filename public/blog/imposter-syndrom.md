@@ -26,7 +26,7 @@ Some common triggers include:
 - Avoiding new challenges because you feel unqualified.
 - Downplaying your achievements (“It was just luck”).
 
-# How to Overcome Imposter Syndrome as a Front-End Developer
+## How to Overcome Imposter Syndrome as a Front-End Developer
 
 ### 1. Track Your Wins
 
