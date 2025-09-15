@@ -11,3 +11,11 @@ export interface ProjectType {
     endedAt?: string;
   };
 }
+
+export interface BlogType {
+  createdAt: string;
+  title: string;
+  content: string;
+  keywords: string[];
+  description: string;
+}

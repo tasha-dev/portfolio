@@ -142,4 +142,8 @@
   p {
     @apply leading-7 [&:not(:first-child)]:mt-6;
   }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    @apply hidden;
+  }
 }
