@@ -1,7 +1,4 @@
 // Codes by mahdi tasha
-// Forcing next.js to render this component as client side component
-"use client";
-
 // Importing part
 import { ReactNode } from "react";
 
@@ -11,7 +8,7 @@ export default function Footer(): ReactNode {
   return (
     <footer className="mt-10">
       <small className="truncate block">
-        © 2025 Mahdi Tasha. All rights reserved.
+        © {new Date().getFullYear()} Mahdi Tasha. All rights reserved.
       </small>
     </footer>
   );

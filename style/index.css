@@ -146,4 +146,10 @@
   .scrollbar-hide::-webkit-scrollbar {
     @apply hidden;
   }
+
+  .markdown {
+    h3 {
+      /* background: red; */
+    }
+  }
 }

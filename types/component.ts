@@ -38,3 +38,13 @@ export interface BlogsComponentProps {
   data: BlogType;
   className?: string;
 }
+
+export interface BlogPageProps {
+  params: {
+    encodedTitle: string;
+  };
+}
+
+export interface MarkdownProps {
+  contentPath: string;
+}

@@ -26,9 +26,7 @@ Some common triggers include:
 - Avoiding new challenges because you feel unqualified.
 - Downplaying your achievements (“It was just luck”).
 
----
-
-## How to Overcome Imposter Syndrome as a Front-End Developer
+# How to Overcome Imposter Syndrome as a Front-End Developer
 
 ### 1. Track Your Wins
 
@@ -49,8 +47,6 @@ Engage in developer forums, Discord groups, or local meetups. Talking with other
 ### 5. Focus on Progress, Not Perfection
 
 Your code doesn’t need to be perfect — it needs to solve the problem.
-
----
 
 ## FAQs About Imposter Syndrome in Front-End Development
 

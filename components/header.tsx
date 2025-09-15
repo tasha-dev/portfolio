@@ -21,19 +21,23 @@ const links: {
   label: string;
   href: string;
 }[] = [
-  {
-    label: "About Me",
-    href: "#about",
-  },
-  {
-    label: "Projects",
-    href: "#projects",
-  },
-  {
-    label: "Contact",
-    href: "#contact",
-  },
-];
+    {
+      label: "About Me",
+      href: "#about",
+    },
+    {
+      label: "Projects",
+      href: "#projects",
+    },
+    {
+      label: "Contact",
+      href: "#contact",
+    },
+    {
+      label: "Blog",
+      href: "blog",
+    },
+  ];
 
 // Creating and exporting Header component as default
 export default function Header(): ReactNode {
