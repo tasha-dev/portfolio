@@ -5,6 +5,29 @@ import { ProjectType } from "@/types/general";
 // Creating projects data
 const projects: ProjectType[] = [
   {
+    title: "Finance system for sevin team",
+    description:
+      "It's a web-based financial dashboard and panel created for the team 'Sevin Team'",
+    liveUrl: "https://www.finance.sevintm.com/",
+    stack: ["TypeScript", "NextJS", "ReactJS", "TailwindCSS", "RadixUI"],
+    status: "pending",
+    dates: {
+      startedAt: "2025-10-16T10:10:00",
+    },
+  },
+  {
+    title: "Luster Salehi Bio Page",
+    description:
+      "A bio page for that a business offers services like chandelier (لوستر) restoration, plating, second-hand exchange, repair, and welding.",
+    liveUrl: "https://www.qr.lustersalehi.com/",
+    stack: ["TypeScript", "NextJS", "ReactJS", "TailwindCSS", "RadixUI"],
+    status: "completed",
+    dates: {
+      startedAt: "2025-10-16T10:10:00",
+      endedAt: "2025-10-17T18:00:00",
+    },
+  },
+  {
     title: "Safarnmahe 24",
     description:
       "Safarnameh24 is an online hotel booking platform in Iran offering instant vouchers, official invoices, and 24/7 support.",

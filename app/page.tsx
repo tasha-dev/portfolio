@@ -9,6 +9,7 @@ import Project from "@/components/project";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Mail, Send } from "lucide-react";
+import { compareDesc, parseISO } from "date-fns";
 
 // Creating and exporting Home page as default
 export default function HomePage(): ReactNode {
@@ -37,9 +38,17 @@ export default function HomePage(): ReactNode {
         <main>
           <h2 className="mb-5">Projects</h2>
           <div className="flex flex-col gap-12">
-            {projects.map((item, index) => (
-              <Project data={item} key={index} />
-            ))}
+            {projects
+              .slice()
+              .sort((a, b) => {
+                const dateA = parseISO(a.dates.endedAt || a.dates.startedAt);
+                const dateB = parseISO(b.dates.endedAt || b.dates.startedAt);
+
+                return compareDesc(dateA, dateB);
+              })
+              .map((item, index) => (
+                <Project data={item} key={index} />
+              ))}
           </div>
         </main>
       </section>
