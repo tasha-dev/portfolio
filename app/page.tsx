@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Mail, Send } from "lucide-react";
 import { compareDesc, parseISO } from "date-fns";
+import MahdiText from "@/components/mahdiText";
 
 // Creating and exporting Home page as default
 export default function HomePage(): ReactNode {
@@ -17,6 +18,7 @@ export default function HomePage(): ReactNode {
   return (
     <Page>
       <section className="mb-14" id="about">
+        <MahdiText />
         <main>
           <Person
             data={{
