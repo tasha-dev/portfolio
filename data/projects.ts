@@ -5,6 +5,17 @@ import { ProjectType } from "@/types/general";
 // Creating projects data
 const projects: ProjectType[] = [
   {
+    title: "Brain mark",
+    description: "Your intelligent bookmark manager",
+    liveUrl: "https://brainmark.vercel.app/",
+    stack: ["TypeScript", "NextJS", "ReactJS", "TailwindCSS", "ShadCN"],
+    status: "completed",
+    dates: {
+      startedAt: new Date("2025-12-17 11:00").toISOString(),
+      endedAt: new Date("2025-12-21 16:00").toISOString(),
+    },
+  },
+  {
     title: "Finance system for sevin team",
     description:
       "It's a web-based financial dashboard and panel created for the team 'Sevin Team'",
