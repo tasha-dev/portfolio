@@ -7,6 +7,8 @@ import type { Metadata, Viewport } from "next";
 import moment from "moment";
 import { cn } from "@/lib/util";
 import { Toaster } from "@/component/ui/sonner";
+import "@/app/globals.css";
+import { TooltipProvider } from "@/component/ui/tooltip";
 
 // Defining variables
 const siteUrl = "https://tasha.vercel.app";
@@ -104,15 +106,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
    return (
       <html suppressHydrationWarning>
          <ThemeProvider>
-            <body
-               className={cn(
-                  "overflow-x-hidden overflow-y-auto bg-background text-foreground",
-                  interFont.className,
-               )}
-            >
-               <Toaster />
-               {children}
-            </body>
+            <TooltipProvider>
+               <body
+                  className={cn(
+                     "overflow-x-hidden overflow-y-auto bg-background text-foreground",
+                     interFont.className,
+                  )}
+               >
+                  <Toaster />
+                  {children}
+               </body>
+            </TooltipProvider>
          </ThemeProvider>
       </html>
    );

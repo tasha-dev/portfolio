@@ -3,6 +3,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@plugin "@tailwindcss/typography";
 
 /*Defining custom variants*/
 @custom-variant dark (&:is([data-theme="dark"] *));
@@ -121,4 +122,7 @@
 }
 
 @layer base {
+   button {
+      @apply cursor-pointer;
+   }
 }
