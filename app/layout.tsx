@@ -4,8 +4,7 @@ import { RootLayoutProps } from "@/type/component";
 import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import type { Metadata, Viewport } from "next";
-import moment from "moment";
-import { cn } from "@/lib/util";
+import { cn, experiance } from "@/lib/util";
 import { Toaster } from "@/component/ui/sonner";
 import "@/app/globals.css";
 import { TooltipProvider } from "@/component/ui/tooltip";
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
       default: "Mahdi Tasha – Front-End Developer",
       template: "%s | Mahdi Tasha",
    },
-   description: `Front-end developer with ${moment().diff("2021-03-21")} years of experience building modern, responsive web apps with React, Next.js, and TypeScript. Open for freelance and contract work.`,
+   description: `Front-end developer with ${experiance} years of experience building modern, responsive web apps with React, Next.js, and TypeScript. Open for freelance and contract work.`,
    applicationName: "Mahdi Tasha Portfolio",
    authors: [{ name: "Mahdi Tasha", url: siteUrl }],
    creator: "Mahdi Tasha",

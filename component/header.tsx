@@ -24,7 +24,7 @@ const navData: NavItem[] = [
    },
    {
       label: "Resume",
-      href: "",
+      href: "/resume.pdf",
       download: true,
    },
 ];
