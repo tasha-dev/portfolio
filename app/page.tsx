@@ -2,6 +2,7 @@
 // Importing part
 import Header from "@/component/header";
 import Hero from "@/component/section/hero";
+import { Projects } from "@/component/section/projects";
 import Skills from "@/component/section/skils";
 
 // Creating and exporting Home page as default
@@ -11,7 +12,8 @@ export default function HomePage() {
       <>
          <Header />
          <Hero />
-         <Skills />
+         <Skills className="lg:mb-8 mb-5" />
+         <Projects />
       </>
    );
 }
