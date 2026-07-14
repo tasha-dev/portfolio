@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mahdi Tasha Portfolio
 
-## Getting Started
+I'm a front-end developer with 6+ years of experience building modern,
+responsive web applications using React, Next.js, and TypeScript. I care
+about clean architecture, smooth UX, and shipping products that actually
+solve problems — not just look good in a demo. Currently open for
+freelance and contract work.
 
-First, run the development server:
+## Social Links
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Github ([tasha-dev](https://github.com/tasha-dev))
+- Telegram ([tashaDEV](https://t.me/tashaDEV))
+- Instagram ([1tashadev](https://instagram.com/1tashadev))
+- Resume ([/resume.pdf](https://portfolio.mahditasha.com/resume.pdf))
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## SKILLS
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- TypeScript
+- JavaScript
+- HTML5
+- CSS3
+- React
+- Next.js
+- React Query
+- Tailwind CSS
+- RadixUI
+- ShadCN
+- Bootstrap
+- Git & GitHub
+- REST API Integration
+- PWA Development
+- Responsive / Mobile-First Design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## CONTACT
 
-## Learn More
+Whether you've got a project in mind, a question about my work, or just
+want to say hi — I'd love to hear from you. I'm currently open for
+freelance and contract work, so feel free to drop me an email or send a
+quick message on Telegram. I'm always open to new ideas, collaborations,
+or a good conversation. Your message won't get lost in the void — I
+actually read them!
 
-To learn more about Next.js, take a look at the following resources:
+## FOOTER
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+copyright: © 2026 Mahdi Tasha. All rights reserved.
+tagline: Built with Next.js, TypeScript & Tailwind CSS — hosted on Vercel.
