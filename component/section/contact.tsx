@@ -11,6 +11,7 @@ export function Contact({ className }: ClassOnlyProps) {
    // Returning JSX
    return (
       <section
+         id="contact"
          className={cn(
             "lg:min-h-dvh lg:flex items-center justify-center",
             className,

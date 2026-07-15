@@ -5,11 +5,10 @@
 // Importing part
 import Header from "@/component/header";
 import { Button } from "@/component/ui/button";
-import { ErrorPageProps } from "@/type/page";
 import Link from "next/link";
 
-// Creating and exporting Error page as default
-export default function ErrorPage({ error, reset }: ErrorPageProps) {
+// Creating and exporting NotFound page as default
+export default function NotFoundPage() {
    // Returning JSX
    return (
       <>
@@ -21,18 +20,14 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
          >
             <main className="p-4">
                <div className="prose prose-neutral dark:prose-invert w-full max-w-2xl mx-auto mb-5">
-                  <h2 className="lg:text-center text-destructive">500</h2>
-                  <h1 className="lg:text-center">Something went wrong</h1>
+                  <h2 className="lg:text-center text-destructive">404</h2>
+                  <h1 className="lg:text-center">Page not found</h1>
                   <p className="lg:text-center">
-                     An unexpected error occurred. Try refreshing, or head back
-                     home.
+                     The page you're looking for doesn't exist or may have been
+                     moved.
                   </p>
-                  <pre>
-                     <p>{error.message}</p>
-                  </pre>
                </div>
                <div className="flex items-center lg:justify-center gap-2 flex-wrap">
-                  <Button onClick={reset}>Retry</Button>
                   <Button
                      variant={"outline"}
                      render={<Link href="/">Head home</Link>}

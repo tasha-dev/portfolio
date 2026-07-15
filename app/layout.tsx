@@ -103,12 +103,12 @@ const interFont = Inter({
 export default function RootLayout({ children }: RootLayoutProps) {
    // Returning JSX
    return (
-      <html suppressHydrationWarning>
+      <html suppressHydrationWarning className="scroll-smooth">
          <ThemeProvider>
             <TooltipProvider>
                <body
                   className={cn(
-                     "overflow-x-hidden overflow-y-auto bg-background text-foreground",
+                     "overflow-x-hidden overflow-y-auto bg-background text-foreground scroll-smooth",
                      interFont.className,
                   )}
                >
