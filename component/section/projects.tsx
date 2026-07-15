@@ -19,9 +19,13 @@ export function Projects({ className }: ClassOnlyProps) {
                   end.
                </p>
             </div>
-            <div className="grid lg:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <div className="flex flex-col lg:gap-8 gap-6 max-w-2xl mx-auto">
                {projects.map((item, index) => (
-                  <Project key={index} data={item} />
+                  <Project
+                     className="last-of-type:border-b-0 border-b border-b-foreground/20 lg:pb-8 pb-6"
+                     key={index}
+                     data={item}
+                  />
                ))}
             </div>
          </main>

@@ -5,4 +5,5 @@ export interface Project {
    url: string;
    stack: string[];
    description: string;
+   img?: string;
 }

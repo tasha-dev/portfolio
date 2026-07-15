@@ -1,16 +1,16 @@
 // Codes by mahdi tasha
 // Importing part
-import TypescriptLogo from "@/image/typescript.webp";
-import JavascriptLogo from "@/image/javascript.webp";
-import HtmlLogo from "@/image/html.webp";
-import CssLogo from "@/image/css.webp";
-import ReactLogo from "@/image/react.webp";
-import NextLogo from "@/image/next.webp";
-import TailwindLogo from "@/image/tailwind.webp";
-import ShadcnLogo from "@/image/shadcn.webp";
-import GitLogo from "@/image/git.webp";
-import GithubLogo from "@/image/github.webp";
-import BootstrapLogo from "@/image/bootstrap.png";
+import TypescriptLogo from "@/image/skill/typescript.webp";
+import JavascriptLogo from "@/image/skill/javascript.webp";
+import HtmlLogo from "@/image/skill/html.webp";
+import CssLogo from "@/image/skill/css.webp";
+import ReactLogo from "@/image/skill/react.webp";
+import NextLogo from "@/image/skill/next.webp";
+import TailwindLogo from "@/image/skill/tailwind.webp";
+import ShadcnLogo from "@/image/skill/shadcn.webp";
+import GitLogo from "@/image/skill/git.webp";
+import GithubLogo from "@/image/skill/github.webp";
+import BootstrapLogo from "@/image/skill/bootstrap.png";
 
 // Defining skills
 const skills: {
