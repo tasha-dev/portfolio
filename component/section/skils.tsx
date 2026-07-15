@@ -14,7 +14,12 @@ export default function Skills({ className }: ClassOnlyProps) {
       <section className={className}>
          <main className="max-w-2xl mx-auto overflow-hidden">
             <LogoLoop
-               logos={skills}
+               logos={skills.map((item) => {
+                  return {
+                     ...item,
+                     className: item.invertOnDark ? "dark:invert" : undefined,
+                  };
+               })}
                speed={100}
                direction="left"
                logoHeight={60}

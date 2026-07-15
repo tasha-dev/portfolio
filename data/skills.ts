@@ -6,9 +6,9 @@ import HtmlLogo from "@/image/skill/html.webp";
 import CssLogo from "@/image/skill/css.webp";
 import ReactLogo from "@/image/skill/react.webp";
 import NextLogo from "@/image/skill/next.webp";
-import TailwindLogo from "@/image/skill/tailwind.webp";
+import TailwindLogo from "@/image/skill/tailwind.svg";
 import ShadcnLogo from "@/image/skill/shadcn.webp";
-import GitLogo from "@/image/skill/git.webp";
+import GitLogo from "@/image/skill/git.png";
 import GithubLogo from "@/image/skill/github.webp";
 import BootstrapLogo from "@/image/skill/bootstrap.png";
 
@@ -17,6 +17,7 @@ const skills: {
    src: string;
    alt: string;
    href: string;
+   invertOnDark?: boolean;
 }[] = [
    {
       src: TypescriptLogo.src,
@@ -52,11 +53,13 @@ const skills: {
       src: NextLogo.src,
       alt: "Next.js",
       href: "https://nextjs.org",
+      invertOnDark: true,
    },
    {
       src: ShadcnLogo.src,
       alt: "shadcn/ui",
       href: "https://ui.shadcn.com",
+      invertOnDark: true,
    },
    {
       src: GitLogo.src,
@@ -67,6 +70,7 @@ const skills: {
       src: GithubLogo.src,
       alt: "GitHub",
       href: "https://github.com",
+      invertOnDark: true,
    },
    {
       src: BootstrapLogo.src,

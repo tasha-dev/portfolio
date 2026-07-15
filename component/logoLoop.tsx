@@ -20,6 +20,7 @@ export interface LogoImageItem {
    srcSet?: string;
    sizes?: string;
    width?: number | string;
+   className?: string;
    height?: number | string;
    alt?: string;
    title?: string;
@@ -394,6 +395,7 @@ export const LogoLoop = memo<LogoLoopProps>(
                   width={item.width}
                   height={item.height}
                   alt={item.alt ?? ""}
+                  className={item.className}
                   title={item.title}
                   loading="lazy"
                   decoding="async"
