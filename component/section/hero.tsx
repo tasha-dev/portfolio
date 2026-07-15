@@ -34,7 +34,7 @@ export default function Hero({ className }: ClassOnlyProps) {
                   variant={"outline"}
                   render={
                      <Link href="/resume.pdf" download>
-                        Get In Touch
+                        Resume
                      </Link>
                   }
                />

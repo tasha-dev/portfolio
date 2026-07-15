@@ -1,6 +1,7 @@
 // Codes by mahdi tasha
 // Importing part
 import Header from "@/component/header";
+import { Contact } from "@/component/section/contact";
 import Hero from "@/component/section/hero";
 import { Projects } from "@/component/section/projects";
 import Skills from "@/component/section/skils";
@@ -14,6 +15,7 @@ export default function HomePage() {
          <Hero />
          <Skills className="lg:mb-8 mb-5" />
          <Projects />
+         <Contact />
       </>
    );
 }
