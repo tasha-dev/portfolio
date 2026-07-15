@@ -1,11 +1,14 @@
 // Codes by mahdi tasha
-// Forcing next.js to render this component as client side
-"use client";
-
 // Importing part
 import Header from "@/component/header";
 import { Button } from "@/component/ui/button";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+// Defining metadata
+export const metadata: Metadata = {
+   title: "Page not found",
+};
 
 // Creating and exporting NotFound page as default
 export default function NotFoundPage() {
