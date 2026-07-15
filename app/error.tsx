@@ -19,8 +19,8 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
                "lg:min-h-[calc(100dvh-68px)] lg:flex lg:items-center lg:justify-center"
             }
          >
-            <main className="p-4">
-               <div className="prose prose-neutral dark:prose-invert w-full max-w-2xl mx-auto mb-5">
+            <main className="p-4 max-w-2xl mx-auto">
+               <div className="prose prose-neutral dark:prose-invert w-full max-w-full mb-5">
                   <h2 className="lg:text-center text-destructive">500</h2>
                   <h1 className="lg:text-center">Something went wrong</h1>
                   <p className="lg:text-center">

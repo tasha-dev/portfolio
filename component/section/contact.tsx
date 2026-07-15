@@ -17,8 +17,8 @@ export function Contact({ className }: ClassOnlyProps) {
             className,
          )}
       >
-         <main className="p-4">
-            <div className="prose prose-neutral dark:prose-invert w-full max-w-2xl mx-auto mb-5">
+         <main className="p-4 max-w-2xl mx-auto">
+            <div className="prose prose-neutral dark:prose-invert w-full max-w-full mb-5">
                <h2 className="lg:text-center">Contact Me</h2>
                <p className="lg:text-center">
                   Whether you've got a project in mind, a question about my

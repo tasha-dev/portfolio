@@ -18,11 +18,11 @@ export default function NotFoundPage() {
          <Header />
          <section
             className={
-               "lg:min-h-[calc(100dvh-68px)] lg:flex lg:items-center lg:justify-center"
+               "lg:min-h-[calc(100dvh-68px)] lg:flex lg:items-center lg:justify-center max-w-2xl mx-auto"
             }
          >
             <main className="p-4">
-               <div className="prose prose-neutral dark:prose-invert w-full max-w-2xl mx-auto mb-5">
+               <div className="prose prose-neutral dark:prose-invert w-full max-w-full mb-5">
                   <h2 className="lg:text-center text-destructive">404</h2>
                   <h1 className="lg:text-center">Page not found</h1>
                   <p className="lg:text-center">
