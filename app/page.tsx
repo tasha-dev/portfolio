@@ -17,7 +17,7 @@ export default function HomePage() {
       <Hero />
       <Skills className="lg:mb-8 mb-5 lg:mt-0 mt-5" />
       <Projects className="lg:border-0 border-t border-t-foreground/20" />
-      <Proof className="border-y border-y-foreground/20" />
+      <Proof className="lg:border-y border-t border-foreground/20" />
       <Contact className="lg:border-0 border-t border-t-foreground/20" />
       <Footer />
     </>
