@@ -13,6 +13,7 @@ import MarkioImage from "@/image/project/markio.png";
 import EvolveosImage from "@/image/project/evolveos.webp";
 import RelogImage from "@/image/project/relog.png";
 import BrainmarkImage from "@/image/project/brainmark.png";
+import GlyphImage from "@/image/project/glyph.png";
 
 // Defining projects to be render
 const projects: Project[] = [
@@ -22,15 +23,7 @@ const projects: Project[] = [
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
       img: WebimodeImage.src,
       description:
-         'Webimode is a freelancing and digital-services platform for national and international clients, covering web/app development, UI/UX design, logo design, animation, content creation, and social media management. I built out the platform UI — service listings, request/quote flow, portfolio showcase, and blog — designed to take a client from "I have an idea" to a scoped, quoted project.',
-   },
-   {
-      name: "Safarnameh24",
-      url: "https://safarnameh24.com/",
-      stack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "ShadCN"],
-      img: SafarnamehImage.src,
-      description:
-         "Safarnameh24 is a hotel and flight booking agency in Iran, offering instant vouchers, official invoices, and 24/7 support. I built the booking flow covering both hotels and flights under one consistent experience — search, compare, and book with instant confirmation.",
+         "A digital-services marketplace designed to turn vague client needs into clearly scoped projects. I built the core experience around service discovery, project requests, quoting, portfolio showcases, and content — helping visitors move naturally from exploring services to starting a project.",
    },
    {
       name: "Connect",
@@ -38,7 +31,36 @@ const projects: Project[] = [
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "PWA"],
       img: ConnectImage.src,
       description:
-         "Connect is a consumer-facing PWA super-app connecting users to a wide range of everyday services in one installable, unified experience. I worked on both sides of the product: the consumer PWA itself, and the admin dashboard that gives the Connect team centralized task tracking, data monitoring, and real-time analytics to run the platform.",
+         "A multi-service consumer platform that needed a unified experience for both users and the internal team operating it. I built the consumer-facing PWA alongside an admin dashboard for task management, data monitoring, and analytics, bringing multiple workflows into one cohesive product.",
+   },
+   {
+      name: "Safarnameh24",
+      url: "https://safarnameh24.com/",
+      stack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "ShadCN"],
+      img: SafarnamehImage.src,
+      description:
+         "A hotel and flight booking platform focused on making travel reservations simple and reliable. I built the search and booking experience across both hotels and flights, creating a consistent flow from discovering options to receiving a confirmed booking.",
+   },
+   {
+      name: "Glyph",
+      url: "https://glyph-sigma.vercel.app/",
+      stack: [
+         "TypeScript",
+         "Next.js",
+         "React",
+         "Tailwind CSS",
+         "Tiptap",
+         "Zustand",
+      ],
+      img: GlyphImage.src,
+      description:
+         "Developers needed a focused Markdown writing environment without accounts, cloud infrastructure, or unnecessary complexity. I built Glyph as a local-first, keyboard-driven editor with Vim-style navigation, rich Markdown editing, multiple files, command actions, and Markdown/PDF export.",
+      openSource: {
+         stars: "https://img.shields.io/github/stars/tasha-dev/glyph?style=flat&logo=github&logoColor=white&color=green&label=Stars",
+         forks: "https://img.shields.io/github/forks/tasha-dev/glyph?style=flat&logo=github&logoColor=white&color=green&label=Forks",
+         contributors:
+            "https://img.shields.io/github/contributors/tasha-dev/glyph?style=flat&logo=github&logoColor=white&color=green&label=Contributors",
+      },
    },
    {
       name: "Zarvantrip",
@@ -46,7 +68,7 @@ const projects: Project[] = [
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "ShadCN"],
       img: ZarvantripImage.src,
       description:
-         "Zarvantrip is an Iranian hotel-booking platform focused on Tehran and other major cities. I built the search-and-book flow — city/hotel selection, availability search, and checkout — making a multi-step booking process feel like a two-minute task.",
+         "A hotel-booking platform where users needed to move quickly from choosing a destination to completing a reservation. I built the search and booking flow, including hotel selection, availability, and checkout, turning a multi-step process into a streamlined experience.",
    },
    {
       name: "Finance System for Sevin Team",
@@ -54,7 +76,7 @@ const projects: Project[] = [
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "RadixUI"],
       img: FinanceImage.src,
       description:
-         "A complete internal finance system built for our own team, handling contracts and revenue-split calculations — tracking each developer's percentage on every project alongside broader financial reporting, making payouts transparent and auditable.",
+         "The team needed a centralized way to manage project contracts, revenue splits, and financial reporting. I built an internal finance system that tracks developer percentages across projects and organizes financial data, making team payouts easier to manage and audit.",
    },
    {
       name: "Luster Salehi Bio Page",
@@ -62,30 +84,7 @@ const projects: Project[] = [
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "RadixUI"],
       img: LusterImage.src,
       description:
-         "A QR-scannable bio page built for a chandelier business (sales, restoration, plating, repair, and welding) — designed to be opened via QR code scan and funnel visitors straight to their Instagram, where their full catalog lives. Built for instant load and mobile-first clarity.",
-   },
-   {
-      name: "NexaPanel",
-      url: "https://nexapanel-gamma.vercel.app/",
-      stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
-      description:
-         "A modern SaaS-style admin dashboard demonstrating production-grade internal tool design — product management, posts, todos, quotes, and comments, each with full list/detail views, built on the DummyJSON API.",
-   },
-   {
-      name: "Markio",
-      url: "https://markio.vercel.app/",
-      stack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "ShadCN"],
-      img: MarkioImage.src,
-      description:
-         "A lightweight, distraction-free note-taking app for quickly and securely storing ideas and lists.",
-   },
-   {
-      name: "EvolveOS",
-      url: "https://evolveos.vercel.app/",
-      stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
-      img: EvolveosImage.src,
-      description:
-         "A local-first, markdown-powered personal growth system — journaling, habit tracking, task management, and daily planning in one offline-first dashboard.",
+         "A traditional business needed a simple digital presence that could be accessed instantly from a QR code. I built a mobile-first bio page that introduces the business and directs visitors to its Instagram catalog, keeping the experience focused on the most important action.",
    },
    {
       name: "Relog",
@@ -99,7 +98,54 @@ const projects: Project[] = [
       ],
       img: RelogImage.src,
       description:
-         "An AI-powered tool that generates clean, categorized release notes from any public GitHub repo's commit history — no login, no setup, real-time markdown editing and export.",
+         "Release-note creation can be tedious when changes are buried across a repository's commit history. I built an AI-powered workflow that turns public GitHub commits into categorized release notes with real-time Markdown editing and export.",
+      openSource: {
+         stars: "https://img.shields.io/github/stars/tasha-dev/relog?style=flat&logo=github&logoColor=white&color=green&label=Stars",
+         forks: "https://img.shields.io/github/forks/tasha-dev/relog?style=flat&logo=github&logoColor=white&color=green&label=Forks",
+         contributors:
+            "https://img.shields.io/github/contributors/tasha-dev/relog?style=flat&logo=github&logoColor=white&color=green&label=Contributors",
+      },
+   },
+   {
+      name: "NexaPanel",
+      url: "https://nexapanel-gamma.vercel.app/",
+      stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
+      description:
+         "A dashboard experience built to demonstrate how complex internal tools can remain organized and easy to navigate. I developed reusable interfaces for products, posts, todos, quotes, and comments, including list and detail workflows backed by live API data.",
+      openSource: {
+         stars: "https://img.shields.io/github/stars/tasha-dev/nexapanel?style=flat&logo=github&logoColor=white&color=green&label=Stars",
+         forks: "https://img.shields.io/github/forks/tasha-dev/nexapanel?style=flat&logo=github&logoColor=white&color=green&label=Forks",
+         contributors:
+            "https://img.shields.io/github/contributors/tasha-dev/nexapanel?style=flat&logo=github&logoColor=white&color=green&label=Contributors",
+      },
+   },
+   {
+      name: "Markio",
+      url: "https://markio.vercel.app/",
+      stack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "ShadCN"],
+      img: MarkioImage.src,
+      description:
+         "A lightweight note-taking experience designed for capturing ideas without distractions. I built a minimal interface focused on fast note creation and straightforward organization.",
+      openSource: {
+         stars: "https://img.shields.io/github/stars/tasha-dev/markio?style=flat&logo=github&logoColor=white&color=green&label=Stars",
+         forks: "https://img.shields.io/github/forks/tasha-dev/markio?style=flat&logo=github&logoColor=white&color=green&label=Forks",
+         contributors:
+            "https://img.shields.io/github/contributors/tasha-dev/markio?style=flat&logo=github&logoColor=white&color=green&label=Contributors",
+      },
+   },
+   {
+      name: "EvolveOS",
+      url: "https://evolveos.vercel.app/",
+      stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
+      img: EvolveosImage.src,
+      description:
+         "Personal productivity tools often become fragmented across multiple apps. I built EvolveOS as a local-first workspace combining journaling, habits, tasks, and daily planning into one offline-friendly experience.",
+      openSource: {
+         stars: "https://img.shields.io/github/stars/tasha-dev/evolveos?style=flat&logo=github&logoColor=white&color=green&label=Stars",
+         forks: "https://img.shields.io/github/forks/tasha-dev/evolveos?style=flat&logo=github&logoColor=white&color=green&label=Forks",
+         contributors:
+            "https://img.shields.io/github/contributors/tasha-dev/evolveos?style=flat&logo=github&logoColor=white&color=green&label=Contributors",
+      },
    },
    {
       name: "Brainmark",
@@ -107,17 +153,27 @@ const projects: Project[] = [
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
       img: BrainmarkImage.src,
       description:
-         'An intelligent bookmark manager that requires a one-sentence "why" for every saved link, then intelligently resurfaces links over time using spaced-repetition principles.',
+         "Saving bookmarks is easy, but remembering why they mattered is not. I built a bookmark manager that captures the reasoning behind each saved link and resurfaces useful links over time using spaced-repetition principles.",
+      openSource: {
+         stars: "https://img.shields.io/github/stars/tasha-dev/brainmark?style=flat&logo=github&logoColor=white&color=green&label=Stars",
+         forks: "https://img.shields.io/github/forks/tasha-dev/brainmark?style=flat&logo=github&logoColor=white&color=green&label=Forks",
+         contributors:
+            "https://img.shields.io/github/contributors/tasha-dev/brainmark?style=flat&logo=github&logoColor=white&color=green&label=Contributors",
+      },
    },
    {
       name: "Persian Bank (React)",
       url: "https://persian-bank-react.vercel.app/",
       stack: ["TypeScript", "React"],
-      img: "",
       description:
-         "An open-source React utility library that identifies Iranian banks from card numbers or Sheba/IBAN, returning bank info and icons — saving developers from rebuilding this lookup logic on every project.",
+         "Developers repeatedly need to identify Iranian banks from card numbers and IBANs. I built an open-source React utility that handles this lookup and returns bank information and icons, making the functionality reusable across projects.",
+      openSource: {
+         stars: "https://img.shields.io/github/stars/tasha-dev/persian-bank-react?style=flat&logo=github&logoColor=white&color=green&label=Stars",
+         forks: "https://img.shields.io/github/forks/tasha-dev/persian-bank-react?style=flat&logo=github&logoColor=white&color=green&label=Forks",
+         contributors:
+            "https://img.shields.io/github/contributors/tasha-dev/persian-bank-react?style=flat&logo=github&logoColor=white&color=green&label=Contributors",
+      },
    },
 ];
-
 // Exporting project as default
 export default projects;
