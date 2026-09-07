@@ -3,19 +3,16 @@ import { cn, experiance } from "@/lib/util";
 
 export default function Experience({ className }: ClassOnlyProps) {
    return (
-      <section className={cn("p-4", className)}>
+      <section className={cn("p-4", className)} id="experience">
          <main className="max-w-2xl mx-auto prose prose-neutral dark:prose-invert w-full">
             <h2>Building Modern Web Experiences Since 2020</h2>
-
             <p>
                {experiance}+ years of professional frontend development,
                building responsive and production-ready web applications for
                clients and businesses with React, Next.js, TypeScript, and
                Tailwind CSS.
             </p>
-
             <hr />
-
             <div>
                <h3>2020 — 2021</h3>
                <h4>Frontend Developer</h4>
@@ -35,13 +32,10 @@ export default function Experience({ className }: ClassOnlyProps) {
                   </li>
                </ul>
             </div>
-
             <hr />
-
             <div>
                <h3>2021 — Present</h3>
                <h4>Freelance Frontend Developer</h4>
-
                <ul>
                   <li>
                      Built production web applications for clients using React,
@@ -74,12 +68,9 @@ export default function Experience({ className }: ClassOnlyProps) {
                   </li>
                </ul>
             </div>
-
             <hr />
-
             <div>
                <h3>Selected Product Experience</h3>
-
                <ul>
                   <li>
                      <strong>Admin Panels:</strong> Built component-driven

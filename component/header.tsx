@@ -10,20 +10,21 @@ import { Button } from "./ui/button";
 import { ThemeToggler } from "./themeToggler";
 import NavSheet from "./navSheet";
 import { useScrolled } from "@/hook/useScrolled";
+import { Dot, Plus } from "lucide-react";
 
 // Defining data of nav to render
 const navData: NavItem[] = [
    {
-      label: "Github",
-      href: "https://github.com/tasha-dev",
+      label: "Projects",
+      href: "/#projects",
    },
    {
-      label: "Telegram",
-      href: "https://t.me/tashaDEV",
+      label: "About",
+      href: "/#about",
    },
    {
-      label: "Instagram",
-      href: "https://instagram.com/1tashadev",
+      label: "Experience",
+      href: "/#experience",
    },
    {
       label: "Resume",
@@ -59,7 +60,6 @@ export default function Header({ className }: ClassOnlyProps) {
                               href={item.href}
                               key={index}
                               download={item.download}
-                              target="_blank"
                            >
                               {item.label}
                            </Link>
@@ -67,8 +67,25 @@ export default function Header({ className }: ClassOnlyProps) {
                      />
                   ))}
                </nav>
-               <ThemeToggler />
+               <div className="size-9 lg:flex hidden mr-3 items-center justify-center text-foreground">
+                  <Dot />
+               </div>
+               <Button
+                  size="sm"
+                  className="lg:flex hidden"
+                  render={<Link href="/#contact">Start a project</Link>}
+               />
                <NavSheet data={navData} className="lg:hidden flex" />
+               <ThemeToggler />
+               <Button
+                  size="icon"
+                  className="lg:hidden flex"
+                  render={
+                     <Link href="/#contact">
+                        <Plus />
+                     </Link>
+                  }
+               />
             </div>
          </div>
       </header>

@@ -3,7 +3,7 @@ import { cn } from "@/lib/util";
 
 export default function WhatICanBuild({ className }: ClassOnlyProps) {
    return (
-      <section className={cn("p-4", className)}>
+      <section className={cn("p-4", className)} id="about">
          <main className="max-w-2xl mx-auto prose prose-neutral dark:prose-invert w-full">
             <h2>What I Can Build</h2>
 
