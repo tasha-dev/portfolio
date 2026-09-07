@@ -1,6 +1,6 @@
 // Codes by mahdi tasha
 // Importing part
-import { cn } from "@/lib/util";
+import { cn, isAvailable } from "@/lib/util";
 import { ClassOnlyProps } from "@/type/component";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,9 +9,6 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 // Creating and exporting Logo component as default
 export default function Logo({ className }: ClassOnlyProps) {
-   // Defining variables
-   const isAvailable: boolean = true;
-
    // Returning JSX
    return (
       <Tooltip>
