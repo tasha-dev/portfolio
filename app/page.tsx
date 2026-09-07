@@ -14,7 +14,7 @@ import WhatICanBuild from "@/component/section/whatICanBuild";
 export default function HomePage() {
    // Returning JSX
    return (
-      <>
+      <article className="lg:space-y-0 space-y-10">
          <Header />
          <Hero />
          <Skills className="lg:mb-8 mb-5 lg:mt-0 mt-5" />
@@ -24,6 +24,6 @@ export default function HomePage() {
          <Proof className="lg:border-y border-t border-foreground/20" />
          <Contact className="lg:border-0 border-t border-t-foreground/20" />
          <Footer />
-      </>
+      </article>
    );
 }
