@@ -4,7 +4,7 @@ import { ClassOnlyProps } from "@/type/component";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/util";
-import { Mail, Send } from "lucide-react";
+import { Mail, MoveRight, Send } from "lucide-react";
 
 // Creating and exporting Contact section component as default
 export function Contact({ className }: ClassOnlyProps) {
@@ -19,18 +19,19 @@ export function Contact({ className }: ClassOnlyProps) {
       >
          <main className="p-4 max-w-2xl mx-auto">
             <div className="prose prose-neutral dark:prose-invert w-full max-w-full mb-5">
-               <h2 className="lg:text-center">Contact Me</h2>
+               <h2 className="lg:text-center">Have a project in mind?</h2>
                <p className="lg:text-center">
-                  Whether you've got a project in mind, a question about my
-                  work, or just want to say hi — I'd love to hear from you. I'm
-                  currently open for freelance and contract work, so feel free
-                  to drop me an email or send a quick message on Telegram. I'm
-                  always open to new ideas, collaborations, or a good
-                  conversation. Your message won't get lost in the void — I
-                  actually read them!
+                  Tell me what you're building, what you need, and when you need
+                  it.
                </p>
             </div>
             <div className="flex items-center lg:justify-center gap-2 flex-wrap">
+               <div className="text-foreground flex items-center mr-4">
+                  <span className="font-normal text-base mr-3">
+                     Let's build it
+                  </span>
+                  <MoveRight className="size-5" />
+               </div>
                <Button
                   render={
                      <Link href="https://t.me/tashaDEV" target="_blank">
