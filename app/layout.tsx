@@ -103,7 +103,7 @@ const interFont = Inter({
 export default function RootLayout({ children }: RootLayoutProps) {
    // Returning JSX
    return (
-      <html suppressHydrationWarning className="scroll-smooth">
+      <html suppressHydrationWarning className="scroll-smooth" lang="en">
          <ThemeProvider>
             <TooltipProvider>
                <body

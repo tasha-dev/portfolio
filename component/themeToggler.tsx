@@ -24,6 +24,7 @@ export function ThemeToggler({ className }: ClassOnlyProps) {
          <TooltipTrigger
             render={
                <Button
+                  aria-label="Toggle theme"
                   size={"icon"}
                   variant={"ghost"}
                   onClick={() => {
