@@ -49,7 +49,7 @@ export default function Header({ className }: ClassOnlyProps) {
       >
          <div className="mx-auto max-w-2xl flex justify-between gap-3">
             <Logo className="shrink-0" />
-            <div className="flex-1 flex items-center justify-end">
+            <div className="flex-1 flex items-center justify-end gap-3">
                <nav className="lg:flex hidden items-center">
                   {navData.map((item, index) => (
                      <Button
@@ -67,9 +67,7 @@ export default function Header({ className }: ClassOnlyProps) {
                      />
                   ))}
                </nav>
-               <div className="size-9 lg:flex hidden mr-3 items-center justify-center text-foreground">
-                  <Dot />
-               </div>
+               <Dot className="lg:block hidden mr-1.5" />
                <Button
                   size="sm"
                   className="lg:flex hidden"
