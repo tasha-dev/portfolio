@@ -43,7 +43,7 @@ const projects: Project[] = [
    },
    {
       name: "Glyph",
-      url: "https://glyph-sigma.vercel.app/",
+      url: "https://github.com/tasha-dev/glyph",
       stack: [
          "TypeScript",
          "Next.js",
@@ -88,7 +88,7 @@ const projects: Project[] = [
    },
    {
       name: "Relog",
-      url: "https://relog-inky.vercel.app/",
+      url: "https://github.com/tasha-dev/relog",
       stack: [
          "TypeScript",
          "Next.js",
@@ -108,7 +108,7 @@ const projects: Project[] = [
    },
    {
       name: "NexaPanel",
-      url: "https://nexapanel-gamma.vercel.app/",
+      url: "https://github.com/tasha-dev/nexapanel",
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
       description:
          "A dashboard experience built to demonstrate how complex internal tools can remain organized and easy to navigate. I developed reusable interfaces for products, posts, todos, quotes, and comments, including list and detail workflows backed by live API data.",
@@ -121,7 +121,7 @@ const projects: Project[] = [
    },
    {
       name: "Markio",
-      url: "https://markio.vercel.app/",
+      url: "https://github.com/tasha-dev/markio",
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS", "ShadCN"],
       img: MarkioImage.src,
       description:
@@ -135,7 +135,7 @@ const projects: Project[] = [
    },
    {
       name: "EvolveOS",
-      url: "https://evolveos.vercel.app/",
+      url: "https://github.com/tasha-dev/evolveos",
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
       img: EvolveosImage.src,
       description:
@@ -149,7 +149,7 @@ const projects: Project[] = [
    },
    {
       name: "Brainmark",
-      url: "https://brainmark.vercel.app/",
+      url: "https://github.com/tasha-dev/brainmark",
       stack: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
       img: BrainmarkImage.src,
       description:
@@ -163,8 +163,9 @@ const projects: Project[] = [
    },
    {
       name: "Persian Bank (React)",
-      url: "https://persian-bank-react.vercel.app/",
+      url: "https://github.com/tasha-dev/persian-bank-react",
       stack: ["TypeScript", "React"],
+      img: "",
       description:
          "Developers repeatedly need to identify Iranian banks from card numbers and IBANs. I built an open-source React utility that handles this lookup and returns bank information and icons, making the functionality reusable across projects.",
       openSource: {
@@ -175,5 +176,6 @@ const projects: Project[] = [
       },
    },
 ];
+
 // Exporting project as default
 export default projects;
