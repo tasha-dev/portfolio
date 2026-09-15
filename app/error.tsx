@@ -38,6 +38,9 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
                      render={<Link href="/">Head home</Link>}
                   />
                </div>
+               <div>
+                <h1>HI</h1>
+               </div>
             </main>
          </section>
       </>

@@ -18,13 +18,7 @@ const proofs: Proof[] = [
     date: "Nov 10, 2023",
     message:
       "As always, excellent output quality and clean code. A deep understanding of the project along with strong technical proficiency in front-end and a great work ethic are among his standout qualities.",
-  },
-  {
-    name: "Morteza.F",
-    date: "Nov 7, 2023",
-    message:
-      "His work is excellent and at a senior front-end level. Precision in delivery and the quality of code and output are outstanding. Overall, his work — from technical knowledge to speed and quality of output and code — was excellent, and I hope to collaborate with him more in the future.",
-  },
+  }
 ];
 
 export default proofs;

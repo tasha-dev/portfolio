@@ -7,6 +7,9 @@ import { Button } from "../ui/button";
 import DepthTextRender from "../depthTextRenderer";
 import { Badge } from "../ui/badge";
 import { Circle, Dot } from "lucide-react";
+import { TooltipTrigger, Tooltip, TooltipContent } from "../ui/tooltip";
+import Github from "../ui/icons/github";
+import Linkedin from "../ui/icons/linkedin";
 
 // Creating and exporting Hero section component as default
 export default function Hero({ className }: ClassOnlyProps) {
@@ -40,6 +43,39 @@ export default function Hero({ className }: ClassOnlyProps) {
                   variant={"outline"}
                   render={<Link href="/#projects">View My Work</Link>}
                />
+               <Tooltip>
+                 <TooltipTrigger 
+                    render={
+                      <Button 
+                        size="icon" 
+                        variant="outline" 
+                        render={
+                          <Link href="https://github.com/tasha-dev" target="_blank">
+                            <Github fill="currentColor" />
+                          </Link>
+                        } 
+                      />
+                    } 
+                  />
+                 <TooltipContent>Github Account of mine</TooltipContent>
+               </Tooltip>
+               <Tooltip>
+                 <TooltipTrigger 
+                    render={
+                      <Button 
+                        size="icon" 
+                        variant="outline" 
+                        render={
+                          <Link href="https://linkedin.com/in/tasha-dev/" target="_blank">
+                            <Linkedin fill="currentColor" />
+                          </Link>
+                        } 
+                      />
+                    } 
+                  />
+                 <TooltipContent>Linkedin Account of mine</TooltipContent>
+               </Tooltip>
+
             </div>
             <div className="flex items-center lg:justify-center gap-3 flex-wrap">
                <Badge
