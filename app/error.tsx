@@ -29,6 +29,7 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
                   </p>
                   <pre>
                      <p>{error.message}</p>
+                     h2
                   </pre>
                </div>
                <div className="flex items-center lg:justify-center gap-2 flex-wrap">
@@ -37,9 +38,6 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
                      variant={"outline"}
                      render={<Link href="/">Head home</Link>}
                   />
-               </div>
-               <div>
-                <h1>HI</h1>
                </div>
             </main>
          </section>
